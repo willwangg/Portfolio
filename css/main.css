@@ -290,6 +290,7 @@ nav ul li a {
     font-size: 18px;
     color: white;
     font-family: inherit;
+    outline:none
 }
 
 .project-cta:hover{

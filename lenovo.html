@@ -23,7 +23,29 @@
         <div class="column left">
             <h1>Lenovo</h1>
             <p>UX Design Internship</p>
+            <button onclick="topFunction()" id="topBtn" title="top">Back To Top</button>
         </div>
+
+        <script type="text/javascript">
+            var mybutton = document.getElementById("topBtn");
+            console.log(mybutton);
+            window.onscroll = function() {scrollFunction()};
+    
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                }
+                else {
+                    mybutton.style.display = "none";
+                }
+            }
+    
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+            </script>
+
         <div class="column right">
             <div class="section1" id='overview'>
                 <div class="title">

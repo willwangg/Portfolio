@@ -153,3 +153,28 @@
     border: 0 solid transparent;
     padding-right: 5%;
 }
+
+#topBtn{
+    cursor:pointer;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 50px; /* Rounded corners */
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    font-family: inherit;
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    width: 10%;
+    padding-left: 4%;
+    z-index: 99; /* Make sure it does not overlap */
+    padding: 15px; /* Some padding */
+    outline:none
+}
+
+
+
+#topBtn:hover {
+    color: black;
+    background-color: white;
+  }

@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/xplore.css">
 </head>
+
 <body>
+    
     <header>
         <nav id='navBar'>
             <a href="index.html"><img src="Images/nameLogo.png" alt="nameLogo" class="nameLogo"></a>
@@ -23,7 +25,29 @@
         <div class="column left">
             <h1>Xplore UCSD</h1>
             <p>Product Design</p>
+            <button onclick="topFunction()" id="topBtn" title="top">Back To Top</button>
         </div>
+
+        <script type="text/javascript">
+        var mybutton = document.getElementById("topBtn");
+        console.log(mybutton);
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            }
+            else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        </script>
+
         <div class="column right">
             <div class="section1" id='overview'>
                 <div class="title">
@@ -352,8 +376,17 @@
                 </div>
 
                 <div class="content">
-                    <p>Our business model is a subscription-service for campuses, parks, and other landmarks. They will provide us with subscription fees and content, while we charge subscription fees and provide them a platform for their tourists.
+                    <h2>🤝The Power of Compromises</h2>
+                    <p>One thing I learned from this project, is that sometimes being a Product Designer, I have to make compromises. This point came through directly when my teammates
+                        included people who are not designers. When I presented my designs to my product manager who comes from a software engineer background, I would get lots of feedbacks from the technical
+                        feasibility and scalability perspective. Although some designs are "good-to-haves", my PM would question the necessity of them, considering the limited amount of software engineers we had.
                     </p>
+                    <p>
+                        Through the constant back-and-forth meetings with my PM, I learned to prioritize the good attributes of my designs, thinking about which one of them would bring the most value to the product.
+                        Therefore, even if not all parts of my designs will be implemented, I can still convince my PM and make sure that the most essential parts are.
+                    </p>
+                    <br>
+                    <br>
                 </div>
             </div>
 
