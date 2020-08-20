@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src="Images/nameLogo.png" alt="nameLogo" class="nameLogo">
 
-            <nav>
-                <ul class="show-desktop hide-mobile" id="nav">
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="index.html">Resume</a></li>
+    <header>
+            <nav id='navBar'>
+                <a href="index.html"><img src="Images/nameLogo.png" alt="nameLogo" class="nameLogo"></a>
+                <ul>
+                    <li><a href="index.html" class="selected">Work</a></li>
+                    <li><a href="index.html" class="anime">About</a></li>
+                    <li><a href="index.html" class="anime">Resume</a></li>
                 </ul>
-            </nav>
-        </header>
-
+                <div class="animation start-home"></div>
+            </nav>  
+    </header>
+    
         <div class="introSection">
             <section class="introWords">
                 <h1 class="intro">
@@ -28,7 +28,7 @@
             </section>
             <img src="Images/selfPortrait.svg" alt="self portrait" class="selfPortrait">
         </div>
-    </div>
+    
 
     <div class="scroll">
         <a href="#">
@@ -57,17 +57,17 @@
     <div class="project-container">
         <div class="projectCard-2">
             <a href="#">
-                <img src="Images/xplore/thumbnail.png">
+                <img src="Images/Lenovo/thumbnail.png">
             </a>
         </div>
     
 
         <div a href="#" class="project-box-2">
             <div class="projectOverview">
-            <h3>Xplore UCSD</h3>
-            <p>A Self-Guided Touring App for Campus and Landmarks.</p>
-            <span style="color:#162B49"><p style="padding-top:0; font-weight:700; margin-bottom:10px;">Product Design</p></span>
-            <button type="button" class="project-cta">View Project</button>
+            <h3>Lenovo</h3>
+            <p>Designing AI-powered softwares for millions of hardware users.</p>
+            <span style="color:#E1140A"><p style="padding-top:0; font-weight:700; margin-bottom:10px;">UX Design Internship</p></span>
+            <button type="button" class="project-cta lenovobut">View Project</button>
             </div>
         </div>
     </div>
@@ -91,4 +91,17 @@
     </div>
 
 </body>
+
+<footer>
+    <div class="wrapper">
+        <nav>
+            <p>👨‍🎨Designed & 👨‍🔧Programmed by Boyang</p>
+            <ul>
+                <li><a href="index.html" class="selected">Work</a></li>
+                <li><a href="index.html" class="footer-anime">About</a></li>
+                <li><a href="index.html" class="footer-anime">Resume</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
 </html>
