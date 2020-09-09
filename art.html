@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arts & Fun</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/xplore.css">
+    <link rel="stylesheet" href="css/art.css">
+</head>
+
+<body>
+<header>
+    <nav id='navBar'>
+        <a href="index.html"><img src="Images/nameLogo.png" alt="nameLogo" class="nameLogo"></a>
+        <ul>
+            <li><a href="index.html" class="anime">Work</a></li>
+            <li><a href="about.html" class="anime">About</a></li>
+            <li><a href="https://drive.google.com/file/d/1OMxdtL5UzdcqZeheS8ChUzhd4_djdO2l/view?usp=sharing" class="anime">Resume</a></li>
+        </ul>
+    </nav>  
+</header>
+
+<div class="container">
+    <div class="column left">
+        <button onclick="topFunction()" id="topBtn" title="top" style="margin-top:20px;">Back To Top</button>
+    </div>
+
+    <script type="text/javascript">
+        var mybutton = document.getElementById("topBtn");
+        console.log(mybutton);
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            }
+            else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        </script>
+
+    <div class="column right">
+        <div class="section1" id='overview'>
+            <h2 style="font-size:42px; padding-top:50px;">Artwork Practice During my Free Time. :)</h2>
+        </div>
+
+        <img src="Images/arts/thumbnail.png" class="spanImage">
+
+        <div class="grid">
+            <div class="big">
+                <img src="Images/arts/poster1.jpg">
+            </div>
+            <div class="small">
+                <img src="Images/arts/banner2.png">
+            </div>
+            <div class="small">
+                <img src="Images/arts/banner1.jpg">
+            </div>
+            <div class="small">
+                <img src="Images/arts/draw.gif">
+            </div>
+            <div class="small1">
+                <img src="Images/arts/stretch.gif">
+            </div>
+            <div class="big1">
+                <img src="Images/arts/glitch.gif">
+            </div>
+            <div class="small1">
+                <img src="Images/arts/melt2.gif">
+            </div>
+            <div class="big1" style="margin-bottom: 200px;">
+                <img src="Images/arts/seven.gif">
+            </div>
+        </div>
+</body>
+
+<footer>
+    <div class="wrapper">
+        <nav>
+            <p>👨‍🎨Designed & 👨‍🔧Programmed by Boyang</p>
+            <ul>
+                <li><a href="http://www.linkedin.com/in/bywillwang/" class="footer-anime">Linkedin</a></li>
+                <li><a href="mailto:b2wang@ucsd.edu" class="footer-anime">Email</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+</html>
