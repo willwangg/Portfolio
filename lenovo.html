@@ -1,152 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lenovo Internship</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/xplore.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind+Vadodara:300,400,500,600,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&amp;subset=latin-ext">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<header>
-    <nav id='navBar'>
-        <a href="index.html"><img src="Images/nameLogo.png" alt="nameLogo" class="nameLogo"></a>
-        <ul>
-            <li><a href="index.html" class="anime">Work</a></li>
-            <li><a href="about.html" class="anime">About</a></li>
-            <li><a href="https://drive.google.com/file/d/1NaYMefqaGNZodliyKwIIPWCDLIglcIVx/view?usp=sharing" class="anime">Resume</a></li>
-        </ul>
-    </nav>  
-</header>
-<body>
-    
-    <div class="container">
-        <div class="column left">
-            <h1>Lenovo</h1>
-            <p>UX Design Internship</p>
-            <button onclick="topFunction()" id="topBtn" title="top">Back To Top</button>
+
+<body style="background: rgb(255,255,255);">
+    <nav class="navbar navbar-light navbar-expand-md projectNav" id="nav" style="height: 120px;/*padding-right: 0px;*//*padding-left: 0px;*/width: 100%;">
+        <div class="container-fluid" id="nav-padding"><a class="navbar-brand" href="index.html" style="padding-left: 0px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1" style="width: 100%;">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" id="selected" href="#" style="margin-right: 70px;padding: 0px;">Works</a></li>
+                    <li class="nav-item"><a class="nav-link" id="unselected" href="me.html" style="padding: 0px;padding-left: 0px;margin-left: 0px;padding-right: 0px;padding-bottom: 0px;">Me</a></li>
+                </ul>
+            </div>
         </div>
-
-        <script type="text/javascript">
-            var mybutton = document.getElementById("topBtn");
-            console.log(mybutton);
-            window.onscroll = function() {scrollFunction()};
-    
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    mybutton.style.display = "block";
-                }
-                else {
-                    mybutton.style.display = "none";
-                }
-            }
-    
-            function topFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
-            </script>
-
-        <div class="column right">
-            <div class="section1" id='overview'>
-                <div class="title">
-                    <h2>Internship Overview</h2>
-                </div>
-
-                <div class="content">
-                    <p>In Summer 2019, I was lucky to intern at one of the largest hardware companies in the world. Lenovo is a multinational technology company that designs, develops, manufactures, and sells personal computers, smartphones, and other electronic devices. I interned at Lenovo’s Advanced System Design Center in Shenzhen, China, with the Computer Vision team.
-                    </p>
-                </div>
-            </div>
-
-            <img src="Images/Lenovo/shenzhen.jpg" class="spanImage">
-
-        
-            <div class="my-role">
-                <div class="involvements">             
-                    <ul>
-                        <h2>My Involvements</h2>
-                        <li>Competitive Analysis</li>
-                        <li>Low to Hi-Fidelity Prototyping</li>
-                        <br>
-
-                        <h2>Timeframe</h2>
-                        <li>12 Weeks</li>
-                        <li>Summer 2019</li>
-                        <br>
-                        <br>
-
-                        <h2>My Team</h2>
-                        <li>Senior Software Developers</li>
-                        <li>Product Managers</li>
-                        <li>Eason Chiu(Fellow SWE Intern)</li>
-                    </ul>
-                </div>
-            </div>
-
-            <img src="Images/Lenovo/nda.png" class="spanImage">
-            
-            <div class="section" id='background'>
-                <div class="title">
-                    <h2>Major Projects</h2>
-                </div>
-            
-                <div class="content-with-pic">
-                    <img src="Images/Lenovo/website.png" class="challenge">
-                    <p>For the Computer Vision Team, one of the tasks is data-training. One of the tools they used was an internal data-labelling website.
-                        As useful as the website was, it was not easy to learn. So, partnered with an SWE intern, we identified the pain points of the website and proposed
-                        a 2.0 version, which was approved and shipped 2 months later.
-                    </p>
-                    <br>
-                    <br>
-                    <br>
-
-                    <img src="Images/Lenovo/album.png" class="challenge">
-                    <p>One of the main achievements of my team this year was automated photo recognition. I was tasked to incorporate the new technology into the existing
-                        Lenovo Photo Album. I brainstormed 5 potential use cases and turned them into prototypes. Through many sessions of critiques and iterations, I 
-                        successfully shipped two features to the Photo Album App:
-                    </p>
-                    <ul class="bullet">
-                        <li>System-Generated Photo Albums of Timeframes</li>
-                        <br>
-                        <li>System-Generated Photo Albums of Categories</li>
-                    </ul>
-                </div>   
-            </div>
-
-            <div class="section" id='takeaway'>
-                <div class="title">
-                    <h2>Takeaways</h2>
-                </div>
-
-                <div class="content">
-                    <h2>🤖 Understanding AI-Driven Design</h2>
-                    <p>In the design process and frameworks that I have learned, it was always a problem-driven approach. I would first spend a few weeks to look for potential problems and user needs before
-                        thinking about solutions. However, in this internship, there were multiple times when I was trying to find problems with a already established technology - a "solution".
-                    </p>
-                    <p>This felt strange in the beginning. When searching for problems with a solution, it was hard for me to go as broad as I would normally. But, through countless chats with the staff designers,
-                        I gradually learned how to navigate the problem space with a solution in mind. I started to realize that having a solution in mind can serve as a direction for my exploratory research, making
-                        me focused on the problems that could potentially be the right locks for the key in my hands.
-                    </p>
-                </div>
-            </div>
-
-            <br>
-            <br><br>
-
-        </div>
+    </nav>
+    <h1 style="margin-top: 80px;font-size: 40px;padding: 0px;padding-left: 15%;margin-right: 0px;margin-bottom: 0px;height: auto;margin-left: 0px;line-height: 45px;">Lenovo</h1>
+    <h1 style="margin: 0px;font-size: 1.7rem;line-height: 2.5rem;color: rgba(0,0,0,0.5);font-weight: 400;padding-left: 15%;margin-top: 5px;">Interaction Design Intern</h1>
+    <div style="height: 2px;background: rgb(0,0,0);margin-top: 80px;"></div>
+    <div><img class="aligned" width="680px" src="assets/img/Lenovo%20Thumbnail.jpg" style="margin-top: 100px;">
+        <p class="content"><span style="font-weight: bold;color: rgb(0,0,0);">Time -&nbsp;</span>Summer 2019</p>
+        <p class="content"><span style="color: rgb(0,0,0);font-weight: bold;">Role -</span><strong>&nbsp;</strong>Interaction Design Intern</p>
+        <p class="content"><span style="font-weight: bold;color: rgb(0,0,0);">Partners -</span><strong>&nbsp;</strong>Data Scientists, Product Managers, and fellow SWE Interns</p>
+        <p class="content" style="margin-top: 10px;">In Summer 2019, I was lucky to intern at one of the largest hardware companies in the world. I interned at Lenovo’s Advanced System Design Center in Shenzhen, China, with the Computer Vision team. During the internship, I was involved in two projects.</p>
+        <p class="smalltit" style="padding-right: auto;padding-left: auto;">#1 - Data-Labelling Website</p>
+        <p class="content">For the Computer Vision Team, one of the tasks is data-training. One of the tools they used was an internal data-labelling website. As useful as the website was, it was not easy to use for our internal users. So, partnered with an SWE intern, I redesigned the website and proposed a 2.0 ver. prototype that was&nbsp;<span class="highlight">shipped</span>&nbsp;2 months after my internship ended.</p>
+        <p class="smalltit" style="padding-right: auto;padding-left: auto;">#2 - Lenovo Photo Album</p>
+        <p class="content">One of the main achievements of my team this year was automating photo recognition. I was tasked to incorporate the new technology into the existing Lenovo Photo Album. I brainstormed 5 potential use cases and turned them into prototypes. Through many sessions of critiques and iterations, I successfully designed two new experience flows in the Photo Album App:<br><span class="highlight" style="padding-top: 10px;">- Auto-Generated Animated Albums<br>- Auto-Generated Albums based on Festivals<br></span></p>
     </div>
-
+    <p class="smalltit" style="padding-right: auto;padding-left: auto;">What I Learned</p>
+    <p class="content"><span class="highlight title2">Understanding AI-Driven Design</span></p>
+    <p class="content">In the design process and frameworks that I have learned, it was always a problem-driven approach. I would first spend a few weeks to look for potential problems and user needs before thinking about solutions. However, in this internship, there were multiple times when I was trying to find problems with an already established technology - a "solution".<br><br><span class="highlight">This felt strange in the beginning.</span>&nbsp;When searching for problems with a solution, it was hard for me to go as broad as I would normally. But, through countless chats with the staff designers, I gradually learned how to navigate the problem space with a solution in mind. I started to realize that having a solution in mind can serve as a direction for my exploratory research, making me focused on the problems that could potentially be the right locks for the key in my hands.<br></p>
+    <ul class="nav nav-tabs footer-case" style="height: auto;margin-top: 200px;margin-bottom: 50px;border-style: none;">
+        <li class="nav-item" style="border-style: none;"><a class="nav-link" id="footer-link" href="#" style="padding-left: 0px;color: rgb(0,0,0);">Email</a></li>
+        <li class="nav-item" style="padding-right: 20px;padding-left: 20px;border-style: none;"><a class="nav-link" href="#" style="color: rgb(0,0,0);">Linkedin</a></li>
+        <li class="nav-item shadow-none" data-bs-hover-animate="swing" style="height: auto;border-style: none;"><a class="nav-link" href="#" style="color: rgb(0,0,0);padding-right: 20px;padding-left: 20px;">Instagram</a></li>
+    </ul>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
 </body>
 
-<footer>
-    <div class="wrapper">
-        <nav>
-            <p>👨‍🎨Designed & 👨‍🔧Programmed by Boyang</p>
-            <ul>
-                <li><a href="http://www.linkedin.com/in/bywillwang"  class="footer-anime">Linkedin</a></li>
-                <li><a href="mailto:b2wang@ucsd.edu" class="footer-anime">Email</a></li>
-            </ul>
-        </nav>
-    </div>
-</footer>
 </html>

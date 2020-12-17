@@ -1,411 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xplore UCSD</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/xplore.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind+Vadodara:300,400,500,600,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&amp;subset=latin-ext">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body>
-    
-    <header>
-        <nav id='navBar'>
-            <a href="index.html"><img src="Images/nameLogo.png" alt="nameLogo" class="nameLogo"></a>
-            <ul>
-                <li><a href="index.html" class="anime">Work</a></li>
-                <li><a href="about.html" class="anime">About</a></li>
-                <li><a href="https://drive.google.com/file/d/1NaYMefqaGNZodliyKwIIPWCDLIglcIVx/view?usp=sharing" class="anime">Resume</a></li>
-            </ul>
-        </nav>  
-    </header>
-
-    <div class="container">
-        <div class="column left">
-            <h1>Xplore UCSD</h1>
-            <p>Product Design</p>
-            <button onclick="topFunction()" id="topBtn" title="top">Back To Top</button>
+<body style="background: rgb(255,255,255);">
+    <nav class="navbar navbar-light navbar-expand-md projectNav" id="nav" style="height: 120px;/*padding-right: 0px;*//*padding-left: 0px;*/width: 100%;">
+        <div class="container-fluid" id="nav-padding"><a class="navbar-brand" href="index.html" style="padding-left: 0px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1" style="width: 100%;">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" id="selected" href="#" style="margin-right: 70px;padding: 0px;">Works</a></li>
+                    <li class="nav-item"><a class="nav-link" id="unselected" href="me.html" style="padding: 0px;padding-left: 0px;margin-left: 0px;padding-right: 0px;padding-bottom: 0px;">Me</a></li>
+                </ul>
+            </div>
         </div>
-
-        <script type="text/javascript">
-        var mybutton = document.getElementById("topBtn");
-        console.log(mybutton);
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            }
-            else {
-                mybutton.style.display = "none";
-            }
-        }
-
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-        </script>
-
-        <div class="column right">
-            <div class="section1" id='overview'>
-                <div class="title">
-                    <h2>Project Overview</h2>
-                </div>
-
-                <div class="content">
-                    <p>A mobile app for anyone interested in touring UC San Diego. Users can explore the campus through going on preset tours of different topics and customizing their own tour based on their interests. Each place on campus has a detail page that contains all relevant information about this place.
-                    </p>
-                </div>
-            </div>
-
-            <img src="Images/xplore/mockup.jpg" class="mockup">
-
-            <div class="my-role">
-                <div class="involvements">             
-                    <ul>
-                        <h2>My Involvements</h2>
-                        <li>Exploratory Research</li>
-                        <li>UX&UI Design</li>
-                        <li>Usability Testing</li>
-                        <br>
-
-                        <h2>Timeframe</h2>
-                        <li>10 Weeks</li>
-                        <li>Winter 2020</li>
-                        <br>
-                        <br>
-
-                        <h2>My Team</h2>
-                        <li>Shaotao Yi (PM)</li>
-                        <li>Yvonne Hou (Designer)  &</li>
-                        <li>8 talented software developers</li>
-                    </ul>
-                </div>
-            
-            </div>
-
-            <div class="section" id='background'>
-                <div class="title">
-                    <h2>Background</h2>
-                </div>
-            
-                <div class="content-with-pic">
-                    <img src="Images/xplore/challenge.jpg" class="challenge">
-                    <p>For this project, we were challenged by the San Diego Architecture Foundation(SDAF) to improve the current touring experience of UC San Diego. SDAF is one of the main contributors of the amazing architecture on campus, and one of their goals is to better showcase their works through an improved touring experience.
-                    </p>
-                </div>
-            </div>
-
-            <div class="section" id='prototype'>
-                <div class="title">
-                    <h2>Final Design</h2>
-                </div>
-            </div>
-
-            <img src="Images/xplore/onboarding.jpg" class="spanImage">
-
-            <div class="caption">
-                <h2 style="margin-top: 0px;">Onboarding</h2>
-                <p style="margin-bottom:100px;">Onboarding Pages are important first-impressions users have towards an app. Here, we used the onboarding pages to get users familiar and confident with our app’s key features in a visually-appealing manner.</p>
-            </div>
-
-            <img src="Images/xplore/home.jpg" class="spanImage">
-
-            <div class="caption">
-                <h2 style="margin-top: 0px;">Main Pages</h2>
-                <p style="margin-bottom:100px;">The three main pages for our app are the "Places" Page, the "Tours" Page, and the "Xplore" Home Page. "Places" page contains all places on campus and a search bar. The "Tours" Page consists the customization feature plus many preset tours under different topics. The "Xplore" Page shows the places near your current location and modulized combinations of places and tours.
-                </p>
-            </div>
-
-            <img src="Images/xplore/customization.jpg" class="spanImage">
-
-            <div class="caption">
-                <h2 style="margin-top: 0px;">Tour Customization</h2>
-                <p style="margin-bottom:100px;">Besides preset tours, users can also customize their tour of interests. The simple customization process makes it the key of a personalized touring experience that our app can provide.</p>
-            </div>
-
-            <img src="Images/xplore/during.jpg" class="spanImage">
-
-            <div class="caption">
-                <h2 style="margin-top: 0px;">Tour through Stops</h2>
-                <p style="margin-bottom:100px;">When users hop on tours, they will see a preview of their next stop. When they are on their way to the next stop, they can read through the place detail page and familiarize themselves with the place. After they arrive, they can listen to the audio guide while freeing their eyes focused on the scenes in front of them. :)</p>
-            </div>
-
-            <div class="section" id='problem-space'>
-                <div class="title">
-                    <h2>Breaking Down the Challenge</h2>
-                </div>
-
-                <div class="content">
-                    <p>To improve, we must first understand the problems within the current experience. So, we conducted field studies and went on our school’s official campus tour, the Triton Tour. After recording the interactions that happened during tours, we made a word-cloud of the things that occurred frequently.
-                    </p>
-                    <img src="Images/xplore/wc.png" class="challenge">
-                    <p>Aside from field studies, we interviewed the current Triton Tour leaders to understand the reasons behind the Triton Tour’s design. Using the connections of SDAF, we sent out a survey to prospective students and tourists at San Diego to gather their opinions of a good touring experience.
-                    </p>
-                    <p>Based on the data collected from these three methods, we concluded four problems within the current touring system:
-                    </p>
-                </div>
-            </div>
-
-            <img src="Images/xplore/problems.jpg" class="spanImage">
-
-            <div class="section" id='competitorAnalysis'>
-                <div class="title">
-                    <h2>Competitor Analysis</h2>
-                </div>
-
-                <div class="content">
-                    <p>After discovering problems from the Triton Tour, we evaluated other existing solutions. This allowed us to discover potential gaps in the current market that our app could potentially fill. 
-                    </p>
-                    <p>We evaluated the existing products people might use during tour on five factors: 
-                    </p>
-                    <ul class="bullet">
-                        <li>Customizability</li>
-                        <li>Informativeness</li>
-                        <li>Interactivity</li>
-                        <li>Flexibility</li>
-                        <li>Accessibility</li>
-                    </ul>
-                    <img src="Images/xplore/xplore-ca.png" class="challenge">
-                    <p>From the graph, we see that our main competitor - the Triton Tour - does a great job at being interactive(in-person experience).
-                    </p>
-                    <p>However, the Triton Tour is not really good at being customized for different needs and interests. Also, since it spans only one hour, it is hard for the tour to cover all the necessary information. Across all the other current solutions, none of the existing solutions succeed at Customizability. This finding gave us a signal of where our app could stand in the current market.
-                    </p>
-                </div>
-            </div>
-
-            <div class="section" id='criterion'>
-                <div class="title">
-                    <h2>Design Criterion</h2>
-                </div>
-
-                <div class="content">
-                    <p>Based on our discovery of problems and competitive analysis, we came up with three main criterion for our app:
-                    </p>
-                </div>
-            </div>
-
-            <img src="Images/xplore/criterion.jpg" class="spanImage">
-            <br><br><br><br>
-
-
-            <div class="section" id='targetUser'>
-                <div class="title">
-                    <h2>Target User</h2>
-                </div>
-
-                <div class="content">
-                    <p>Before delving into designs, we needed to understand who we are really designing for. So, 
-                        we broke down the concept of “tourists” of UC San Diego into three types of identity and listed the pain points of each.
-                    </p>
-                </div>
-            </div>
-
-            <img src="Images/xplore/persona.jpg" class="spanImage" style="margin-top: -50px;">
-
-            <div class="caption">
-                <p>Another thing we found was that, when people are on a tour, their mindset generally falls 
-                    somewhere on the following spectrum:
-            </div>
-            
-
-            <div class="section" id='targetUser'>
-                <div class="title">
-                </div>
-
-                <div class="content">
-                    <img src="Images/xplore/spectrum.jpg" class="challenge" >
-                    <h2>Forager</h2>
-                    <ul class="bullet">
-                        <li>Has a specific place in mind</li>
-                        <li>In this state, people have strong interests towards a specific place.
-                        </li>
-                    </ul>
-                    <h2>Wanderer</h2>
-                    <ul class="bullet">
-                        <li>No clear destination in mind
-                        </li>
-                        <li>In this state, people are more likely to take suggestions.
-                        </li>
-                    </ul>
-                    <br>
-                    <p>Instead of a fixed point, a natural, fruitful exploring experience stems from a dialectical 
-                        relationship between the foraging state and the wanderer state. During a tour, the user’s 
-                        mindset is constantly moving on the spectrum.
-                    </p>
-                    <img src="Images/xplore/journey.jpg" class="challenge">
-                    <p>As we understood such dynamics, we decided to design our app not only to support this dynamic, but also 
-                        to promote the constant interchanging between the two sides of the spectrum.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="section" id='userFlow'>
-                <div class="title">
-                    <h2>Information Architecture</h2>
-                </div>
-
-                <div class="content">
-                    <p>To make the app informative, one of the key things is a clear information architecture. For this app, we saw the endpoint of a touring experience to be entering Place Detail Page - as reaching a stop of a tour. So, we started to brainstorm potential use cases and points of entry for the Place Detail Page. 
-                    </p>
-                </div>
-                
-            </div>
-
-            <img src="Images/xplore/workflow.jpg" class="spanImage" style="margin-top: -50px;">
-            <br><br><br>
-
-            <div class="section" id='iterations'>
-                <div class="title">
-                    <h2>Design Iterations</h2>
-                </div>
-
-                <div class="content">
-                    <p>On the place detail page, a lot of information is crammed onto a single, scrollable interface. We neede to lay out the information in the best way so that users absorb the information without being overwhelmed. 
-                    </p>
-                    <p style="margin-bottom: 0px;">Therefore, we came up with three versions of the interfaces, and conducted a preference test with five users to gather their preferences on these variations.
-                    </p>  
-                </div>
-            </div>
-
-            <img src="Images/xplore/placeDetail.jpg" class="spanImage" style="margin-top: -50px;">
-            
-            <div class="caption">
-                <p>It is also important for us to consider how the detail page will be previewed during a tour. So we conducted another test on the layouts of information during the tour.
-                </p>
-            </div>
-            
-            <img src="Images/xplore/tourPreview.jpg" class="spanImage" style="margin-top: -20px;margin-left:28%;width:70%;">
-
-            <div class="section" id='desirabilityTest'>
-                <div class="title">
-                    <h2>UI Desirability Test</h2>
-                </div>
-
-                <div class="content">
-                    <p>We used the official color palette of UC San Diego for this app. Since this is a touring app, we wanted to make the UI as welcoming and up-beat as possible. So, we presented our design screens to five users and asked them to use choose from 18 adjectives to describe the UI. The adjectives used were a spin from the Microsoft Desirability Toolkit.
-                    </p>
-                    <img src="Images/xplore/desirability.jpg" class="challenge">
-                    <p>From the survey responses, we were getting positive feedback from our users, and we wanted to continue in this direction in our design. 
-                    </p>
-                </div>
-            </div>
-            
-            
-            <div class="section" id='tourCustomization'>
-                <div class="title">
-                    <h2>Tour Customization</h2>
-                </div>
-
-                <div class="content">
-                    <p>One of the responses we got from our initial survey was - most of the tourists wanted to tour with someone from the school, because they felt like it would be more interactive. Being a mobile app, it is inherently hard for us to compete with in-person tours for interactivity, but we used this data as an inspiration for our Tour Customization feature.
-                    </p>
-                    <p>We decided to use an Tour Leader avatar that guides users through the entire process. By using the avatar, we hoped to make the customization process more interesting and introduce another sense of friendliness to our app.</p>
-                    <img src="Images/xplore/cusSketch1.png" class="challenge">
-                    <p>After our initial sketch, we felt like the process was too long, so we prioritized the essential asks and reduced the process to only three steps.
-                    </p>
-                    <img src="Images/xplore/cusSketch2.png" class="challenge">
-                </div>
-            </div>
-
-            <div class="section" id='accessibilityTest'>
-                <div class="title">
-                    <h2>Accessibility Tests</h2>
-                </div>
-
-                <div class="content">
-                    <p>Since our app is a touring app, we should expect our users to use it outdoor. But being in Southern California, sometimes the sunlight can be really strong, so, I wanted to test our prototypes under the sun. Thanks to my talented fellow designer Yvonne Hou, we found a tool that can simulate extreme conditions onto the interfaces, and we tested our prototype under extreme sunlight. 
-                    </p>
-                    <br>
-                    <h2>Extreme Sunlight Simulation</h2>
-                    <img src="Images/xplore/sun1.gif.crdownload" class="challenge">
-                    <br>
-                    <br>
-                    <br>
-                    <p>One significant change we made from this test was changing the color of some buttons. The contrast between yellow with white here can be really blurred out in extreme sunlight conditions. The later color pairing both has good contrast and is still recognizable under the sun.
-                    </p><br><br><br><br>
-                </div>
-            </div>
-            
-            <img src="Images/xplore/sun2.jpg" class="spanImage" style="margin-top: -50px;">
-            <br>
-            <br>
-            <br>
-            <br><br><br>
-
-            <div class="section" id='businessModel'>
-                <div class="title">
-                    <h2>Business Model</h2>
-                </div>
-
-
-                <div class="content">
-                    <p>For this project, we designed our app as a touring app for UC San Diego. But, is there a way for us to scale this project as a business? After discussing with our PM, Shaotao, we came up with potential ways to scale this app as a business.
-                    </p>
-                    <img src="Images/xplore/model.jpg" class="challenge">
-                    <p>Our business model is a subscription-service for campuses, parks, and other landmarks. They will provide us with subscription fees and content, while we provide them a platform for their tourists.
-                </p>
-                <img src="Images/xplore/canvas.jpg" class="challenge" style="text-align:center">
-                </div>
-
-            </div>
-
-            <div class="section" id='designSystem'>
-                <div class="title">
-                    <h2>Design System</h2>
-                </div>
-
-                <div class="content">
-                </div>
-            </div>
-
-            <img src="Images/xplore/system1.jpg" class="spanImage">
-            <img src="Images/xplore/system2.jpg" class="spanImage">
-            <img src="Images/xplore/system2-5.jpg" class="spanImage">
-            <img src="Images/xplore/system3.jpg" class="spanImage">
-            <img src="Images/xplore/system4.jpg" class="spanImage">
-            <img src="Images/xplore/system5.jpg" class="spanImage">
-            <br><br>
-
-            <div class="section" id='takeaway'>
-                <div class="title">
-                    <h2>Takeaways</h2>
-                </div>
-
-                <div class="content">
-                    <h2>🤝The Power of Compromises</h2>
-                    <p>One thing I learned from this project, is that sometimes being a Product Designer, I have to make compromises. This point came through directly when my teammates
-                        included people who are not designers. When I presented my designs to my product manager who comes from a software engineer background, I would get lots of feedbacks from the technical
-                        feasibility and scalability perspective. Although some designs are "good-to-haves", my PM would question the necessity of them, considering the limited amount of software engineers we had.
-                    </p>
-                    <p>
-                        Through the constant back-and-forth meetings with my PM, I learned to prioritize the good attributes of my designs, thinking about which one of them would bring the most value to the product.
-                        Therefore, even if not all parts of my designs will be implemented, I can still convince my PM and make sure that the most essential parts are.
-                    </p>
-                    <br>
-                    <br>
-                </div>
-            </div>
-
-        </div>    
+    </nav>
+    <h1 style="margin-top: 80px;font-size: 40px;padding: 0px;padding-left: 15%;margin-right: 0px;margin-bottom: 0px;height: auto;margin-left: 0px;line-height: 45px;">XPlore UCSD</h1>
+    <h1 style="margin: 0px;font-size: 1.7rem;line-height: 2.5rem;color: rgba(0,0,0,0.5);font-weight: 400;padding-left: 15%;margin-top: 5px;">Mobile App Design 0 to 1</h1>
+    <div style="height: 2px;background: rgb(0,0,0);margin-top: 80px;"></div>
+    <div><img class="aligned" width="680px" src="assets/img/Xplore/MockUp.jpg" style="margin-top: 100px;">
+        <p class="content"><span style="font-weight: bold;color: rgb(0,0,0);">Time -&nbsp;</span>Winter 2020</p>
+        <p class="content"><span style="color: rgb(0,0,0);font-weight: bold;">Role -</span><strong>&nbsp;</strong>Design Lead</p>
+        <p class="content"><span style="font-weight: bold;color: rgb(0,0,0);">Partners -</span><strong>&nbsp;</strong>1 Product Manager, 8 Developers - all college students!</p>
+        <p class="content" style="font-weight: bold;color: rgb(0,0,0);"><strong>Now Free to Download at&nbsp;</strong><span id="link" class="highlight" style="font-weight: normal;"><a href="https://play.google.com/store/apps/details?id=com.UCSDTripleC.XPloreUCSD"><span style="text-decoration: underline;">Google Playstore</span></a></span>&nbsp;and&nbsp;<span class="highlight" style="font-weight: normal;">App Store(Mobile)</span></p>
+        <p class="smalltit" style="padding-right: auto;padding-left: auto;">Impact</p>
+        <p class="content">3 Months after the MVP fully shipped, <span>this app</span>&nbsp;has was&nbsp;<span class="highlight">acquired</span>&nbsp;by a local start-up company at San Diego called PrecisePK. It felt surreal seeing my creation, something I made from 0 to 1, getting endorsed by investors!&nbsp;</p>
     </div>
-
-
+    <div><img class="aligned" src="assets/img/Xplore/The%20Challenge.svg" style="margin-top: 100px;">
+        <p class="content">Me and my computer science major friends decided to build something to practice our skills, and this problem was what we chose to tackle. As the designer on the team, I needed to break down this problem statement into specific parts that are easier to solve collaboratively with the team.&nbsp;<br></p>
+        <p class="smalltit">Breaking It Down</p>
+        <p class="content">Through surveying and interviewing the visitors to UC San Diego, we first categorized our users into three types of personas:<br></p><img class="img-fluid aligned" src="assets/img/Xplore/Persona.svg" style="padding-bottom: 0px;margin-bottom: 30px;margin-top: 10px;">
+        <p class="content">Currently, most visitors to our campus choose to go on our school’s official Triton Tour. By interviewing the Triton Tour leaders and actually going on the tours, we discovered 4 core problems underlying the current touring experience.<br></p><img class="img-fluid aligned" src="assets/img/Xplore/field%20study.svg" style="padding-bottom: 50px;">
+        <p class="smalltit">Which Type of Traveller Are You?</p>
+        <p class="content">Besides researching on the school tour, I discovered an interesting pattern from surveying and interviewing tourists at the school:<br></p><img class="aligned" src="assets/img/Xplore/ForagerWanderer.svg">
+        <p class="content">When touring or traveling in general, people tend to fit into one of these two states:<br></p>
+        <p class="content" style="margin-top: 20px;"><span style="font-weight: bold;font-size: 24px;margin-top: 15px;color: rgba(0,0,0,0.9);">The Forager</span><br></p>
+        <p class="content">- Would plan out trip in advance</p>
+        <p class="content">- Always has a specific destination in mind during the trip</p>
+        <p class="content">- In this state, people have strong interest towards a specific place</p>
+        <p class="content" style="margin-top: 20px;"><span style="font-weight: bold;font-size: 24px;margin-top: 15px;color: rgba(0,0,0,0.9);">The Wanderer</span><br></p>
+    </div>
+    <p class="content">- Likes to wander around, no plans made &amp; no specific destination in mind</p>
+    <p class="content">- In this state, people are more likely to consider recommendations.</p><img class="aligned" src="assets/img/Xplore/JourneyMapSpectrum.svg">
+    <p class="content">Moreover, Instead of a fixed point, a natural, fruitful exploring experience stems from a <span class="highlight">dialectical relationship</span>&nbsp;between the foraging state and the wanderer state. During a tour, the user’s mindset is <span class="highlight">constantly shifting</span>&nbsp;between the a Forager and a Wanderer.<br></p>
+    <div style="margin-top: 80px;margin-right: auto;margin-left: auto;">
+        <p class="smalltit" style="padding-right: auto;padding-left: auto;">Information Architecture</p>
+        <p class="content"><img class="aligned" src="assets/img/Xplore/User%20Workflow.svg">To reflect the dynamic between Forager and Wanderer in our user experience, we created a lot of entry points for the Place Detail Page - a stop of a tour in our app. This design of the user flow makes it easy for users to begin going to places as soon as they see something interested in mind.&nbsp;<br></p>
+        <p class="smalltit" style="padding-right: auto;padding-left: auto;">Design Iterations</p>
+        <p class="content">On the Place Detail Page, a lot of information is crammed onto a single, scrollable interface. We need to lay out the information in the best way so that users absorb the information <span class="highlight">without being overwhelmed</span>.</p><img class="unaligned" src="assets/img/Xplore/placeDetail.jpg">
+        <p class="content" style="padding-right: auto;padding-left: auto;">Therefore, we came up with three versions of the interfaces, and conducted a preference test with five users to gather their preferences on these variations.</p>
+        <p class="smalltit" style="padding-right: auto;padding-left: auto;">Design System</p>
+        <p class="content">For this app is a touring app for UC San Diego, we decided to keep our color palette <span class="highlight">consistent&nbsp;</span>with our school’s official color palette. However, we slightly modified the palette to make it more vibrant and welcoming.&nbsp;<br></p><img class="aligned" src="assets/img/Xplore/colorPallete.svg">
+        <p class="content">This color palette was applied to <span class="highlight">every visual element</span>&nbsp;of the app, from the onboarding splash pages to the icons and logos.&nbsp;</p>
+        <div class="d-flex flex-row justify-content-center" style="width: 750px;margin-right: auto;margin-left: auto;margin-top: 35px;"><img src="assets/img/Xplore/Onboarding.png" width="30%" style="padding-right: 10px;"><img src="assets/img/Xplore/Onboarding%204.png" width="30%" style="padding-right: 10px;"><img src="assets/img/Xplore/Home%20Page.png" width="30%" style="padding-right: 10px;"></div><img class="aligned" src="assets/img/Xplore/Icons.png" width="30%" style="padding-right: 10px;margin-top: 20px;margin-bottom: 0px;"><img id="consequent" class="aligned" src="assets/img/Xplore/Logo.png" width="30%" style="padding-right: 10px;margin-top: 5px;padding-left: 8px;">
+        <p class="smalltit" style="padding-right: auto;padding-left: auto;">Responsiveness</p>
+        <p class="content">I was working with a team of developers on this project. To make my designs responsive to different screen sizes and make life easier for my developers, I created a few guidelines for grid and important UI elements.<br></p><img class="aligned" src="assets/img/Xplore/Grids%20(3).png" style="margin-top: 20px;"><img class="aligned" src="assets/img/Xplore/TourCard.png" style="margin-bottom: 0px;"><img class="unaligned" src="assets/img/Xplore/PlaceCard.png" style="margin-top: 20px;">
+    </div>
+    <div>
+        <p class="smalltit" style="padding-right: auto;padding-left: auto;padding-top: 0px;">Usability Testing</p>
+        <p class="content">To make sure the color choices in our app are accessible to all kinds of UC San Diego’s visitors, I carefully evaluated the color contrast of our UIs against the <span class="highlight">accessibility standards by WCAG</span>. Also, since a lot of the use cases are under sunlight, I tested our prototypes under stimulations of strong sunlight.<br></p><img class="aligned" src="assets/img/Xplore/usability.jpg" style="margin-bottom: 10px;margin-top: 10px;">
+        <p class="content">One of the major changes made from our testing was changing the colors of the primary button. The new pairing of text and button background:<br></p>
+        <div>
+            <p class="smalltit">Final Prototypes</p>
+            <div class="d-flex flex-row justify-content-center" style="width: 750px;margin-right: auto;margin-left: auto;margin-top: 35px;margin-bottom: 20px;"><img src="assets/img/Xplore/Onboarding.png" width="30%" style="padding-right: 10px;margin-left: -10px;"><img src="assets/img/Xplore/Onboarding%204.png" width="30%" style="padding-right: 10px;"><img src="assets/img/Xplore/Transportation.png" width="30%" style="padding-right: 10px;"></div>
+            <p class="content" style="margin-top: 20px;"><span class="highlight title2">Start Your Journey Anywhere</span><br>The three main pages for our app are the "Xplore" Home Page, the "Tours" Page, and the "Places" Page.&nbsp;The "Xplore" Page shows the places near your current location and modularized combinations of places and preset tours.&nbsp; The "Tours" Page consists the customization feature plus many preset tours under different topics. The "Places" page contains all places on campus and a search bar.&nbsp;<br></p>
+            <div class="d-flex flex-row justify-content-center" style="width: 750px;margin-right: auto;margin-left: auto;margin-top: 160px;margin-bottom: 20px;"><img src="assets/img/Xplore/tour%20customization%20-%20wireframe.png" width="30%" style="padding-right: 10px;margin-left: -10px;"><img src="assets/img/Xplore/tour%20customization%20-%20wireframe-1.png" width="30%" style="padding-right: 10px;"><img src="assets/img/Xplore/tour%20customization%20-%20wireframe-2.png" width="30%" style="padding-right: 10px;"></div>
+            <p class="content" style="margin-top: 20px;"><span class="highlight title2">Customizing Your Own Tour</span><br>Besides preset tours, users can also customize their tour of interests. The simple customization process makes it the key of a personalized touring experience that our app can provide.<br></p>
+            <div class="d-flex flex-row justify-content-center" style="width: 750px;margin-right: auto;margin-left: auto;margin-top: 160px;margin-bottom: 20px;"><img src="assets/img/Xplore/During%20Tour.png" width="30%" style="padding-right: 10px;margin-left: -10px;"><img src="assets/img/Xplore/Place%20Detail%20One.png" width="30%" style="padding-right: 10px;"><img src="assets/img/Xplore/Place%20Detail%20Four.png" width="30%" style="padding-right: 10px;"></div>
+            <p class="content"><span class="highlight title2">Stop-by-Stop Touring Experience</span><br>When users hop on tours, they will see a preview of their next stop. When they are on their way to the next stop, they can read through the place detail page and familiarize themselves with the place. After they arrive, they can listen to the audio guide while freeing their eyes focused on the scenes in front of them. :)<br></p>
+        </div>
+        <p class="smalltit" style="padding-right: auto;padding-left: auto;">Monetization Ideas</p>
+        <p class="content">For this project, we designed our app as a touring app for UC San Diego. But, is there a way for us to scale this project <span class="highlight">as a business?</span>&nbsp;After discussing with our PM, Shaotao, we came up with potential ways to scale this app as a business.<br></p><img class="aligned" src="assets/img/Xplore/BizModel.svg">
+        <p class="content">Our business model is a <span class="highlight">subscription-service</span>&nbsp;for campuses, parks, and other landmarks. They will provide us with subscription fees and content, while we provide them a platform for their tourists.<br></p><img class="aligned" src="assets/img/Xplore/Business%20Model%20Canvas.svg">
+        <p class="smalltit" style="padding-right: auto;padding-left: auto;">Things I Learned</p>
+        <p class="content">Designing under Constraints<br></p>
+        <p class="content">One thing I learned from this project, is that sometimes being a Product Designer, I have to work under multiple constraints. Different stakeholders on the team might view the product from different perspectives. In order to convince the developers to implement my designs, I learned how to prioritize the values that my designs will bring to our users and to the product itself. In the cases where “usefulness” and “aesthetics” cannot be achieved at the same time, usefulness always wins.<br></p>
+    </div>
+    <ul class="nav nav-tabs footer-case" style="height: auto;margin-top: 200px;margin-bottom: 50px;border-style: none;">
+        <li class="nav-item" style="border-style: none;"><a class="nav-link" id="footer-link" href="#" style="padding-left: 0px;color: rgb(0,0,0);">Email</a></li>
+        <li class="nav-item" style="padding-right: 20px;padding-left: 20px;border-style: none;"><a class="nav-link" href="#" style="color: rgb(0,0,0);">Linkedin</a></li>
+        <li class="nav-item shadow-none" data-bs-hover-animate="swing" style="height: auto;border-style: none;"><a class="nav-link" href="#" style="color: rgb(0,0,0);padding-right: 20px;padding-left: 20px;">Instagram</a></li>
+    </ul>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
 </body>
-
-<footer>
-    <div class="wrapper">
-        <nav>
-            <p>👨‍🎨Designed & 👨‍🔧Programmed by Boyang</p>
-            <ul>
-                <li><a href="http://www.linkedin.com/in/bywillwang"  class="footer-anime">Linkedin</a></li>
-                <li><a href="mailto:b2wang@ucsd.edu" class="footer-anime">Email</a></li>
-            </ul>
-        </nav>
-    </div>
-</footer>
 
 </html>
