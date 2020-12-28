@@ -1,0 +1,22 @@
+.footer-tabs {
+    border:1px transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.footer-item .footer-link{
+    
+}
+
+.footer-link{
+    display: block;
+    padding: 0.5rem 1rem;
+    color: rgb(0,0,0);
+
+}
+
+.footer-link:hover{
+    color: #EB5600;
+    text-decoration:none;
+}
+
