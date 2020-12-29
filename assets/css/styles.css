@@ -1,11 +1,51 @@
+.scrollbarbox{
+    position:fixed;
+    margin-top: 50px;
+    margin-left:50px;
+    width: 220px;
+    height: 110px;
+    transition: all 1s;
+}
+
+.scroll_bar{
+    margin-top:20px;
+    height: 2px;
+    width:100%;
+    background: rgba(0,0,0,0.1);
+}
+
+#scroll_indicator{
+    height:100%;
+    width:0%;
+    background:#EB5600;
+}
+
+.hide {
+    transition: 0.5s;
+    opacity: 0;
+    left: -1%;
+}
+
+.show {
+    opacity: 1;
+    left: 0;
+}
+
+@keyframes scrollappear{
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .footer-tabs {
     border:1px transparent;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
-}
-
-.footer-item .footer-link{
-    
 }
 
 .footer-link{
@@ -19,4 +59,5 @@
     color: #EB5600;
     text-decoration:none;
 }
+
 

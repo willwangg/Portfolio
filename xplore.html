@@ -14,6 +14,42 @@
 </head>
 
 <body style="background: rgb(255,255,255);">
+    <div class="scrollbarbox hide" id="scrollbarbox">
+        <p class="content" style="font-size:16px; font-weight:500; color:rgba(0,0,0,0.5); margin-top: 0px; line-height: 20px;">PRODUCT DESIGN</p>
+        <p class="content" style="font-size:24px;font-weight: 700;color:rgb(0,0,0);margin-top:0px;">XPLORE UCSD</p>
+        <div class="scroll_bar">
+            <div id="scroll_indicator"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        window.onscroll = function() {
+            progressBar();
+        };
+
+        function progressBar() {
+            var winscroll = document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.
+                clientHeight;
+            var scrolled = (winscroll / height) * 100;
+            document.getElementById("scroll_indicator").style.width = scrolled + "%";
+        }
+    </script>
+
+    <script>
+        barid = document.getElementById("scrollbarbox");
+
+        var scrollFunc = function() {
+            var y = window.scrollY;
+            if (y >= 450) {
+                barid.className = "scrollbarbox show"
+            } else {
+                barid.className = "scrollbarbox hide"
+            }
+        };
+
+        window.addEventListener("scroll", scrollFunc);
+    </script>
+
     <nav class="navbar navbar-light navbar-expand-md projectNav" id="nav" style="height: 120px;/*padding-right: 0px;*//*padding-left: 0px;*/width: 100%;">
         <div class="container-fluid" id="nav-padding"><a class="navbar-brand" href="index.html" style="padding-left: 0px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1" style="width: 100%;">
@@ -25,9 +61,10 @@
             </div>
         </div>
     </nav>
-    <h1 style="margin-top: 80px;font-size: 40px;padding: 0px;padding-left: 15%;margin-right: 0px;margin-bottom: 0px;height: auto;margin-left: 0px;line-height: 45px;">XPlore UCSD</h1>
-    <h1 style="margin: 0px;font-size: 1.7rem;line-height: 2.5rem;color: rgba(0,0,0,0.5);font-weight: 400;padding-left: 15%;margin-top: 5px;">Mobile App Design 0 to 1</h1>
-    <div style="height: 2px;background: rgb(0,0,0);margin-top: 80px;"></div>
+    
+    <h1 style="margin-top: 80px;font-size: 1.5rem;font-weight: 500;color:rgba(0,0,0,0.5);padding: 0px;padding-left: 15%;margin-right: 0px;margin-bottom: 0px;height: auto;margin-left: 0px;line-height: 45px;">PRODUCT DESIGN</h1>
+    <h1 style="margin: 0px;font-size: 40px;line-height: 2.5rem;;font-weight: 700;padding-left: 15%;margin-top: 5px;">XPLORE UCSD</h1>
+    <div style="height: 2px;background: rgba(0,0,0);margin-top: 150px;"></div>
     <div><img class="aligned" width="680px" src="assets/img/Xplore/MockUp.jpg" style="margin-top: 100px;">
         <p class="content"><span style="font-weight: bold;color: rgb(0,0,0);">Time -&nbsp;</span>Winter 2020</p>
         <p class="content"><span style="color: rgb(0,0,0);font-weight: bold;">Role -</span><strong>&nbsp;</strong>Design Lead</p>
