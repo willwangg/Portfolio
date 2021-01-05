@@ -108,3 +108,26 @@ footer {
     margin-top:200px;
     margin-bottom: 50px;
 }
+
+.card{
+    display:block;
+    border-radius: 32px;
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+
+.card .cardimg{
+    display:block;
+    border: none;
+    border-radius: 0px;
+    transition: 0.1s ease-in;
+}
+
+.card:hover {
+    border: 2px solid #EB5600;
+    border-radius: 32px;
+}
+
+.card:hover .cardimg{
+    border-radius: 30px;
+}

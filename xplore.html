@@ -102,12 +102,13 @@
     <div class="moreproj" id="next">
         <p style="font-size: 1.7rem;font-weight:500;font-family: 'Hind Vadodara', sans-serif;margin-left: 15%;color: rgba(0,0,0,0.85);">Up Next</p>
         <div class="d-flex flex-row moveright" style="margin-top: 50px;border-style: none;margin-bottom: 95px;padding-left:15%;">
-            <a href="lenovo.html"><img src="assets/img/Lenovo%20Thumbnail.jpg" width="550px" style="box-shadow: 0px 4px 10px rgba(0,0,0,0.25);"></a>
+            <a href="lenovo.html"><div class="card" id="card"><img class="cardimg" id="cardimg" src="assets/img/Lenovo%20Thumbnail.jpg" width="550px" style="box-shadow: 0px 4px 10px rgba(0,0,0,0.25);">
+            </div></a>
             <div class="d-flex flex-column" style="width: 100%;">
                 <h1 class="justify-content-xl-start" style="font-size: 1.7rem;font-weight:700;font-family: 'Hind Vadodara', sans-serif;margin-left: 48px;color: rgba(0,0,0,0.85);height: auto;line-height: 0px;padding: 0px;padding-top: 25px;margin-top: 0px;">Lenovo</h1>
                 <h1 style="font-size: 21px;font-family: 'Hind Vadodara', sans-serif;font-weight: 400;margin-left: 48px;margin-top: 0px;padding: 0px;height: 1.5rem;line-height: 0px;padding-top: 25px;color: rgba(0,0,0,0.5);">UX Design Intern</h1>
                 <p style="font-size: 21px;padding-top: 20px;font-family: 'Hind Vadodara';color: rgba(0,0,0,0.75);letter-spacing: normal;width: 520px;height: 120px;line-height: 30px;margin-bottom: 0px;margin-left: 48px;">I worked with amazing Data Scientists to incorporate Computer Vision into the Lenovo's internal tools and external products.</p>
-                <a href="lenovo.html" style="width: 150px;margin-top: auto;margin-left: 48px;"><img class="justify-content-xl-start" style="margin-left: 0px;margin-top: auto;text-align: left;" src="assets/img/Primary%20Button.svg" height="50px" width="150px"></a>
+                <a href="lenovo.html" style="width: 150px;margin-top: auto;margin-left: 48px;"><img id="cta1" class="justify-content-xl-start" style="margin-left: 0px;margin-top: auto;text-align: left;" src="assets/img/Primary%20Button.svg" height="50px" width="150px"></a>
             </div>
         </div>
     </div>
@@ -121,6 +122,27 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#cta1").hover(function(){
+            $("#card").css("border", "2px solid #EB5600");
+            $("#card").css("border-radius", "32px");
+            $("#cardimg").css("border-radius", "30px");
+        }, function(){
+           $("#card").css("border", "2px solid transparent");
+           $("#cardimg").css("border-radius", "0px");
+        });
+        $("#card").hover(function(){
+            $("#card").css("border", "2px solid #EB5600");
+            $("#card").css("border-radius", "32px");
+            $("#cardimg").css("border-radius", "30px");
+        }, function(){
+           $("#card").css("border", "2px solid transparent");
+           $("#cardimg").css("border-radius", "0px");
+        });
+    });
+    </script>
 </body>
 <script type="text/javascript">
     window.onscroll = function() {
