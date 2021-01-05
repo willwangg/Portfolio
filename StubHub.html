@@ -21,35 +21,11 @@
         <div class="scroll_bar">
             <div id="scroll_indicator"></div>
         </div>
+        <div class="totop" style="margin-top: 10px;">
+            <a class="baselink" href="#nav" id="next2">Back to Top</a>
+        </div>
     </div>
-    <script type="text/javascript">
-        window.onscroll = function() {
-            progressBar();
-        };
 
-        function progressBar() {
-            var winscroll = document.documentElement.scrollTop;
-            var height = document.documentElement.scrollHeight - document.documentElement.
-                clientHeight;
-            var scrolled = (winscroll / height) * 100;
-            document.getElementById("scroll_indicator").style.width = scrolled + "%";
-        }
-    </script>
-
-    <script>
-        barid = document.getElementById("scrollbarbox");
-
-        var scrollFunc = function() {
-            var y = window.scrollY;
-            if (y >= 450) {
-                barid.className = "scrollbarbox show"
-            } else {
-                barid.className = "scrollbarbox hide"
-            }
-        };
-
-        window.addEventListener("scroll", scrollFunc);
-    </script>
     <nav class="navbar navbar-light navbar-expand-md projectNav" id="nav" style="height: 120px;/*padding-right: 0px;*//*padding-left: 0px;*/width: 100%;">
         <div class="container-fluid" id="nav-padding"><a class="navbar-brand" href="index.html" style="padding-left: 0px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1" style="width: 100%;">
@@ -94,7 +70,18 @@
         <p class="content">In this project, I worked with my mentor designer and Product Managers to iterate and improve StubHub’s messaging system. I gathered useful insights through competitor analysis on StubHub’s direct and indirect competitors and am designing new messaging templates for StubHub’s email messaging system.<br></p>
         <p class="smalltit" style="padding-right: auto;padding-left: auto;margin-top: 50px;font-size: 21px;color: rgba(0,0,0,0.25);">This project is currently under work. Contact me for details :).</p>
     </div>
-    <ul class="nav footer-tabs" id="footer" style="height: auto;margin-top: 200px;margin-bottom: 50px;margin-left:15%; border-style: none;">
+    <div class="moreproj" id="next">
+        <p style="font-size: 1.7rem;font-weight:500;font-family: 'Hind Vadodara', sans-serif;margin-left: 15%;color: rgba(0,0,0,0.85);">Up Next</p>
+        <div class="d-flex flex-row moveright" style="margin-top: 50px;border-style: none;margin-bottom: 95px;width: 100%;padding-left:15%;"><a href="xplore.html"><img src="assets/img/Xplore%20Thumbnail.jpg" width="550px" style="box-shadow: 0px 4px 10px rgba(0,0,0,0.25);"></a>
+            <div class="d-flex flex-column">
+                <h1 class="justify-content-xl-start" style="font-size: 1.7rem;font-weight:700;font-family: 'Hind Vadodara', sans-serif;margin-left: 48px;color: rgba(0,0,0,0.85);height: auto;line-height: 0px;padding: 0px;padding-top: 25px;margin-top: 0px;">XPlore UCSD</h1>
+                <h1 style="font-size: 21px;font-family: 'Hind Vadodara', sans-serif;font-weight: 400;margin-left: 48px;margin-top: 0px;padding: 0px;height: 1.5rem;line-height: 0px;padding-top: 25px;color: rgba(0,0,0,0.5);">Product Design 0 to 1</h1>
+                <p style="font-size: 21px;padding-top: 20px;font-family: 'Hind Vadodara';color: rgba(0,0,0,0.75);letter-spacing: normal;width: 450px;height: 120px;line-height: 30px;margin-bottom: 0px;margin-left: 48px;">I collaborated with the engineers to research, design and develop a mobile app from scratch.</p>
+                <a href="xplore.html" style="width: 150px;margin-top: auto;margin-left: 48px;"><img class="justify-content-xl-start" style="margin-top: auto;text-align: left;" src="assets/img/Primary%20Button.svg" height="50px" width="150px"></a>
+            </div>
+        </div>
+    </div>
+    <ul class="nav footer-tabs" id="footer" style="height: auto;margin-top: 50px;margin-bottom: 50px;margin-left:15%; border-style: none;">
         <li class="footer-item" style="border-style: none;"><a class="footer-link" href="mailto:b2wang@ucsd.edu" target="_blank" style="padding-left: 0px;">Email</a></li>
         <li class="footer-item" style="padding-right: 20px;padding-left: 20px;border-style: none;"><a class="footer-link" href="https://www.linkedin.com/in/boyanggwang/" target="_blank">Linkedin</a></li>
         <li class="footer-item" style="height: auto;border-style: none;"><a class="footer-link" href="https://drive.google.com/file/d/1RHVTm2yPFI6cT3KxqApNy1AMwff930z6/view?usp=sharing" target="_blank" style="padding-right: 20px;padding-left: 20px;">Resume</a></li>
@@ -103,5 +90,48 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
 </body>
+<script type="text/javascript">
+    window.onscroll = function() {
+        progressBar();
+    };
 
+    function progressBar() {
+        var winscroll = document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.
+            clientHeight;
+        var scrolled = (winscroll / height) * 100;
+        document.getElementById("scroll_indicator").style.width = scrolled + "%";
+    }
+</script>
+
+<script>
+    barid = document.getElementById("scrollbarbox");
+    var headerclass = document.getElementById("header");
+    moreid = document.getElementById("next");
+    var docuHeight = document.body.scrollHeight;
+    totopid = document.getElementById("next2");
+    console.log(docuHeight);
+
+
+    var scrollFunc = function() {
+        var y = window.scrollY;
+        console.log(y);
+        if (y >= 450) {
+            barid.className = "scrollbarbox show"
+
+        } else {
+            barid.className = "scrollbarbox hide"               
+        }
+
+        if (y >= 4200){
+            moreid.className = "moreproj show movein"
+            totopid.className = "baselink show movein"
+        } else {
+            moreid.className = "moreproj hide"
+            totopid.className = "baselink hide"
+        }
+    };
+
+    window.addEventListener("scroll", scrollFunc);
+</script>
 </html>

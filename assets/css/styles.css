@@ -3,7 +3,7 @@
     margin-top: 50px;
     margin-left:50px;
     width: 220px;
-    height: 110px;
+    height: 190px;
     transition: all 1s;
 }
 
@@ -62,9 +62,20 @@
     left: 0;
 }
 
-.viewmore {
-    display:flex;
-    flex-direction:row;
+.moreproj{
+    margin-top: 200px;
+}
+
+.baselink{
+    font-size:20px;
+    font-weight: 400;
+    color:rgb(0,0,0);
+    text-decoration: none;
+}
+
+.baselink:hover{
+    color: #EB5600;
+    text-decoration:none;
 }
 
 .footer-tabs {
@@ -80,7 +91,6 @@
     display: block;
     padding: 0.5rem 1rem;
     color: rgb(0,0,0);
-
 }
 
 
