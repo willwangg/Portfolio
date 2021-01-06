@@ -69,12 +69,12 @@
 .baselink{
     font-size:20px;
     font-weight: 400;
-    color:rgb(0,0,0);
+    color: #EB5600;
     text-decoration: none;
 }
 
 .baselink:hover{
-    color: #EB5600;
+    color: #ecaa83;
     text-decoration:none;
 }
 
