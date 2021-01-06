@@ -131,3 +131,29 @@ footer {
 .card:hover .cardimg{
     border-radius: 30px;
 }
+
+.prototype {
+    width: 300px;
+}
+
+.prototypecontainer{
+    display:flex;
+    flex-direction:row;
+    margin-top:50px;
+    width: 680px;
+    margin: 30px auto 50px auto;
+}
+
+.prototypecaption{
+    display:flex;
+    flex-direction:column;
+    width: 100%;
+    justify-content: center;
+    padding-left:50px;
+}
+
+.prototypecaption {
+    font-size: 21px;
+    font-family: 'Hind Vadodara';
+    width: 90%;
+}
