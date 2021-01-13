@@ -13,11 +13,18 @@
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-
-<body style="margin-right: 15%;margin-left: 15%;background: rgb(255,255,255);">
-    <nav class="navbar navbar-light navbar-expand-md" id="nav" style="height: 120px;padding-right: 0px;padding-left: 0px;width: 100%;">
-        <div class="container-fluid" id="nav-padding"><a class="navbar-brand" href="index.html" style="padding-left: 0px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1" style="width: 100%;">
+    <section>
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+    </section>
+<body>
+    <nav class="navbar navbar-light navbar-expand-md" id="nav" style="margin-right: 15%;margin-left:15%;height: 120px;padding-right: 0px;padding-left: 0px;width: 65%;">
+        <div class="container-fluid" id="nav-padding">
+            <a class="navbar-brand" href="index.html" style="padding-left: 0px;">
+            </a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1" style="width: 65%;">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item"></li>
                     <li class="nav-item"><a class="nav-link" id="selected" href="#" style="margin-right: 70px;padding: 0px;">Works</a></li>
@@ -26,36 +33,37 @@
             </div>
         </div>
     </nav>
-    <h1 class="movein" style="margin-left: -2px;margin-top: 100px;">Boyang Wang</h1>
-    <p class="movein" style="font-size: 32px;letter-spacing: NORMAL;margin-top: 50px;color: rgba(0,0,0,0.5);font-family: 'Hind Vadodara', sans-serif;font-weight: normal;width: 1000px;margin-left: 0px;margin-bottom: 0px;">An active listener, and a UX Designer who strives to deliver <span style="color: rgba(0,0,0,0.35);">subtle</span> yet effective experiences.</p>
-    <p class="movein" style="font-size: 32px;line-height: 33.6px;letter-spacing: normal;margin-left: 0px;margin-top: 0px;color: rgba(0,0,0,0.5);font-family: 'Hind Vadodara', sans-serif;font-weight: 400;width: 560px;padding-top: 20px;">Previously at&nbsp;<span style="color: rgb(58,34,113);font-weight: 400;">StubHub</span>&nbsp;and&nbsp;<span style="color: rgb(225,20,10);font-weight: 400;">Lenovo</span>.</p>
-    <div class="d-flex flex-row  moveright" style="margin-top: 200px;border-style: none;margin-bottom: 95px;width: 100%;">
-        <a href="StubHub.html"><div class="card" id="card"><img class="cardimg" id="cardimg" src="assets/img/SH_Thumbnail.jpg" width="550px" style="box-shadow: 0px 4px 10px rgba(0,0,0,0.25);">
+    <h1 class="name movein" style="margin-left: -2px;margin-top: 100px;margin-left:15%;margin-right:15%;">Boyang Wang</h1>
+    <p class="title movein" style="margin-left:15%;margin-right:15%;">An active listener, and a UX Designer who strives to deliver <span style="color: rgba(0,0,0,0.35);">subtle</span> yet effective experiences.</p>
+    <p class="title movein" style="margin-top: 20px;margin-bottom:350px;margin-left:15%;margin-right:15%;">Previously at&nbsp;<span style="color: rgb(58,34,113);font-weight: 400;">StubHub</span>&nbsp;and&nbsp;<span style="color: rgb(225,20,10);font-weight: 400;">Lenovo</span>.</p>
+    
+    <div class="d-flex flex-row carddiv moveright">
+        <a href="StubHub.html"><div class="card" id="card"><img class="cardimg" id="cardimg" src="assets/img/SH_Thumbnail.jpg" style="box-shadow: 0px 4px 10px rgba(0,0,0,0.25);">
         </div></a>
-        <div class="d-flex flex-column">
-            <h1 class="justify-content-xl-start" style="font-size: 1.7rem;font-weight:700;font-family: 'Hind Vadodara', sans-serif;margin-left: 48px;color: rgba(0,0,0,0.85);height: auto;line-height: 0px;padding: 0px;padding-top: 25px;margin-top: 0px;">StubHub</h1>
-            <h1 style="font-size: 21px;font-family: 'Hind Vadodara', sans-serif;font-weight: 400;margin-left: 48px;margin-top: 0px;padding: 0px;height: 1.5rem;line-height: 0px;padding-top: 25px;color: rgba(0,0,0,0.5);">Product Design Intern</h1>
-            <p style="font-size: 21px;padding-top: 20px;font-family: 'Hind Vadodara';color: rgba(0,0,0,0.75);letter-spacing: normal;width: 520px;height: 120px;line-height: 30px;margin-bottom: 0px;margin-left: 48px;">I used UX to bring a sense of unity to the internal teams and the passionate fans affected by the pandemic.&nbsp;</p>
-            <a href="StubHub.html" style="width: 150px;margin-left: 48px;margin-top: auto;"><img id="cta1" class="justify-content-xl-start" style="margin-left: 0px;margin-top: auto;text-align: left;" src="assets/img/Primary%20Button.svg" height="50px" width="150px"></a>
+        <div class="d-flex flex-column projectDescription">
+            <h1 class="subtitle1" style="font-weight:700;color: rgba(0,0,0,0.85);">StubHub</h1>
+            <h1 class="subtitle">Product Design Intern</h1>
+            <p class="description">I participated in projects that helped the internal teams and the passionate fans worldwide.&nbsp;</p>
+            <a href="StubHub.html" class="cta"><img id="cta1" class="cta" src="assets/img/Primary%20Button.svg" height="50px" width="150px"></a>
         </div>
     </div>
-    <div class="d-flex flex-row card moveright" style="margin-top: 100px;border-style: none;margin-bottom: 95px;width: 100%;">
-        <a href="xplore.html"><div class="card" id="card2"><img class="cardimg" id="cardimg2" src="assets/img/Xplore%20Thumbnail.jpg" width="550px" style="box-shadow: 0px 4px 10px rgba(0,0,0,0.25);">
+    <div class="d-flex flex-row carddiv moveright">
+        <a href="xplore.html"><div class="card" id="card2"><img class="cardimg" id="cardimg2" src="assets/img/Xplore%20Thumbnail.jpg" style="box-shadow: 0px 4px 10px rgba(0,0,0,0.25);">
         </div></a>
-        <div class="d-flex flex-column">
-            <h1 class="justify-content-xl-start" style="font-size: 1.7rem;font-weight:700;font-family: 'Hind Vadodara', sans-serif;margin-left: 48px;color: rgba(0,0,0,0.85);height: auto;line-height: 0px;padding: 0px;padding-top: 25px;margin-top: 0px;">XPlore UCSD</h1>
-            <h1 style="font-size: 21px;font-family: 'Hind Vadodara', sans-serif;font-weight: 400;margin-left: 48px;margin-top: 0px;padding: 0px;height: 1.5rem;line-height: 0px;padding-top: 25px;color: rgba(0,0,0,0.5);">Product Design 0 to 1</h1>
-            <p style="font-size: 21px;padding-top: 20px;font-family: 'Hind Vadodara';color: rgba(0,0,0,0.75);letter-spacing: normal;width: 520px;height: 120px;line-height: 30px;margin-bottom: 0px;margin-left: 48px;">I collaborated with the engineers to research, design and develop a mobile app from scratch.</p>
-            <a href="xplore.html" style="width: 150px;margin-top: auto;margin-left: 48px;"><img id="cta2" class="justify-content-xl-start" style="margin-top: auto;text-align: left;" src="assets/img/Primary%20Button.svg" height="50px" width="150px"></a>
+        <div class="d-flex flex-column projectDescription">
+            <h1 class="subtitle1" style="font-weight:700;color: rgba(0,0,0,0.85);">XPlore UCSD</h1>
+            <h1 class="subtitle">Product Design 0 to 1</h1>
+            <p class="description" >I worked with a student team and designed a mobile app from scratch.</p>
+            <a href="xplore.html" class="cta"><img id="cta2" class="cta" style="margin-top: auto;text-align: left;" src="assets/img/Primary%20Button.svg" height="50px" width="150px"></a>
         </div>
     </div>
-    <div class="d-flex flex-row card moveright" style="margin-top: 100px;border-style: none;margin-bottom: 95px;">
-        <a href="lenovo.html"><div class="card" id="card3"><img class="cardimg" id="cardimg3" src="assets/img/Lenovo%20Thumbnail.jpg" width="550px" style="box-shadow: 0px 4px 10px rgba(0,0,0,0.25);"></div></a>
-        <div class="d-flex flex-column" style="width: 100%;">
-            <h1 class="justify-content-xl-start" style="font-size: 1.7rem;font-weight:700;font-family: 'Hind Vadodara', sans-serif;margin-left: 48px;color: rgba(0,0,0,0.85);height: auto;line-height: 0px;padding: 0px;padding-top: 25px;margin-top: 0px;">Lenovo</h1>
-            <h1 style="font-size: 21px;font-family: 'Hind Vadodara', sans-serif;font-weight: 400;margin-left: 48px;margin-top: 0px;padding: 0px;height: 1.5rem;line-height: 0px;padding-top: 25px;color: rgba(0,0,0,0.5);">UX Design Intern</h1>
-            <p style="font-size: 21px;padding-top: 20px;font-family: 'Hind Vadodara';color: rgba(0,0,0,0.75);letter-spacing: normal;width: 520px;height: 120px;line-height: 30px;margin-bottom: 0px;margin-left: 48px;">I worked with amazing Data Scientists to incorporate Computer Vision into the Lenovo's internal tools and external products.</p>
-            <a href="lenovo.html" style="width: 150px;margin-top: auto;margin-left: 48px;"><img id="cta3" class="justify-content-xl-start" style="margin-left: 0px;margin-top: auto;text-align: left;" src="assets/img/Primary%20Button.svg" height="50px" width="150px"></a>
+    <div class="d-flex flex-row carddiv moveright">
+        <a href="lenovo.html"><div class="card" id="card3"><img class="cardimg" id="cardimg3" src="assets/img/Lenovo%20Thumbnail.jpg" style="box-shadow: 0px 4px 10px rgba(0,0,0,0.25);"></div></a>
+        <div class="d-flex flex-column projectDescription">
+            <h1 class="subtitle1" style="font-weight:700;color: rgba(0,0,0,0.85);">Lenovo</h1>
+            <h1 class="subtitle">UX Design Intern</h1>
+            <p class="description" >I worked with Data Scientists to incorporate Computer Vision into Lenovo's core products.</p>
+            <a href="lenovo.html" class="cta"><img id="cta3" class="cta" style="margin-left: 0px;margin-top: auto;text-align: left;" src="assets/img/Primary%20Button.svg" height="50px" width="150px"></a>
         </div>
     </div>
 
