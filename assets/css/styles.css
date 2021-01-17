@@ -68,7 +68,11 @@ label #cancel{
     display: none;
 }
 
-
+.carddiv{
+    margin-left:15%;
+    margin-right:15%;
+    margin-top: 100px;
+}
 
 .largetit1{
     margin: 10px 0px 25px 0px;
@@ -403,11 +407,6 @@ footer {
     width:150px;
 }
 
-.carddiv{
-    margin-top: 200px;
-    margin-left:15%;
-    margin-right:15%;
-}
 
 .name{
     margin-left: -2px;
@@ -476,7 +475,8 @@ footer {
         margin: auto;
         width:660px;
         margin-top: 100px;
-        margin-bottom: 95px;
+        margin-bottom: 95px; 
+
     }
 
     /*.carddiv:hover{
