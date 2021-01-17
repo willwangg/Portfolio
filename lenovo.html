@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body style="background: rgb(255,255,255);">
     <div class="scrollbarbox hide" id="scrollbarbox">
-        <p class="content" style="font-size:16px; font-weight:500; color:rgba(0,0,0,0.5); margin-top: 0px; line-height: 20px;">UX DESIGN INTERN</p>
-        <p class="content" style="font-size:24px;font-weight: 700;color:rgb(0,0,0);margin-top:0px;">LENOVO</p>
+        <p class="content scrollcontent" style="font-size:16px; font-weight:500; color:rgba(0,0,0,0.5); margin-top: 0px; line-height: 20px;">UX DESIGN INTERN</p>
+        <p class="content scrollcontent" style="font-size:24px;font-weight: 700;color:rgb(0,0,0);margin-top:0px;">LENOVO</p>
         <div class="scroll_bar">
             <div id="scroll_indicator"></div>
         </div>
@@ -40,24 +41,26 @@
 
         window.addEventListener("scroll", scrollFunc);
     </script>
-    <nav class="navbar navbar-light navbar-expand-md projectNav" id="nav" style="height: 120px;/*padding-right: 0px;*//*padding-left: 0px;*/width: 100%;">
-        <div class="container-fluid" id="nav-padding"><a class="navbar-brand" href="index.html" style="padding-left: 0px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1" style="width: 100%;">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item"></li>
-                    <li class="nav-item"><a class="nav-link" id="selected" href="#" style="margin-right: 70px;padding: 0px;">Works</a></li>
-                    <li class="nav-item"><a class="nav-link" id="unselected" href="me.html" style="padding: 0px;padding-left: 0px;margin-left: 0px;padding-right: 0px;padding-bottom: 0px;">Me</a></li>
-                </ul>
-            </div>
-        </div>
+    <nav id="nav">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa fa-bars" id="btn"></i>
+            <i class="fa fa-times" id="cancel"></i>
+        </label>
+        <a href="index.html"><img src="assets/img/logo.svg"></a>
+        <ul class="nav-list">
+            <li><a href="index.html">Works</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="me.html">About Me</a></li>
+        </ul>
     </nav>
 
-    <div><div style="width:880px; margin: 100px auto 0px auto;">
-        <h1 class="movein smalltit" style="margin: 100px 0px 10px 0px;padding-bottom:5px;line-height:24px;font-size: 1.5rem;font-weight: 500;color:rgba(0,0,0,0.5);">UX DESIGN INTERN</h1>
-        <h1 class="movein smalltit" style="margin: 10px 0px 25px 0px;font-size: 40px;line-height: 2.5rem;;font-weight: 700;">LENOVO</h1>
-        <img class="movein" src="assets/img/Lenovo Thumbnail.jpg" width="880px" style="display:block;">
+    <div><div class="headingsec">
+        <h1 class="movein largetit" style="margin: 100px 0px 10px 0px;padding-bottom:5px;line-height:24px;font-size: 1.5rem;font-weight: 500;color:rgba(0,0,0,0.5);">UX DESIGN INTERN</h1>
+        <h1 class="movein largetit1" style="margin: 10px 0px 25px 0px;font-size: 40px;line-height: 2.5rem;;font-weight: 700;">LENOVO</h1>
+        <img class="movein" src="assets/img/Lenovo Thumbnail.jpg" width="100%" height="auto" style="display:block;">
     </div>
-    <div style="width:680px; margin: 50px auto 0px auto;"></div>
+    <div class="contentsec"></div>
         <p class="content"><span style="font-weight: bold;color: rgb(0,0,0);">Time -&nbsp;</span>Summer 2019</p>
         <p class="content"><span style="color: rgb(0,0,0);font-weight: bold;">Role -</span><strong>&nbsp;</strong>UX Design Intern</p>
         <p class="content"><span style="font-weight: bold;color: rgb(0,0,0);">Partners -</span><strong>&nbsp;</strong>Data Scientists, Product Managers, and fellow SWE Interns</p>
@@ -71,20 +74,20 @@
     </div>
     <p class="smalltit" style="padding-right: auto;padding-left: auto;">What I Learned</p>
     <p class="content">In the design process and frameworks that I have learned, it was always a problem-driven approach. I would first spend a few weeks to look for potential problems and user needs before thinking about solutions. However, in this internship, there were multiple times when I was trying to find problems with an already established technology - a "solution".<br><br><span class="highlight">This felt strange in the beginning.</span>&nbsp;When searching for problems with a solution, it was hard for me to go as broad as I would normally. But, through countless chats with the staff designers, I gradually learned how to navigate the problem space with a solution in mind. I started to realize that having a solution in mind can serve as a direction for my exploratory research, making me focused on the problems that could potentially be the right locks for the key in my hands.<br></p>
-    <div class="moreproj movein" id="next">
-        <p style="font-size: 1.7rem;font-weight:500;font-family: 'Hind Vadodara', sans-serif;margin-left: 15%;color: rgba(0,0,0,0.85);">Up Next</p>
-        <div class="d-flex flex-row moveright" style="margin-top: 50px;border-style: none;margin-bottom: 95px;width: 100%;padding-left:15%;">
-            <a href="StubHub.html"><div class="card" id="card"><img class="cardimg" id="cardimg" src="assets/img/SH_Thumbnail.jpg" width="550px" style="box-shadow: 0px 4px 10px rgba(0,0,0,0.25);">
+    <div class="moreproj" id="next">
+        <p class="smalltit moretit">Up Next</p>
+        <div class="d-flex flex-row carddiv moveright" id="morecard">
+            <a href="StubHub.html"><div class="card" id="card"><img class="cardimg" id="cardimg" src="assets/img/SH_Thumbnail.jpg" style="box-shadow: 0px 4px 10px rgba(0,0,0,0.25);">
             </div></a>
-            <div class="d-flex flex-column">
-                <h1 class="justify-content-xl-start" style="font-size: 1.7rem;font-weight:700;font-family: 'Hind Vadodara', sans-serif;margin-left: 48px;color: rgba(0,0,0,0.85);height: auto;line-height: 0px;padding: 0px;padding-top: 25px;margin-top: 0px;">StubHub</h1>
-                <h1 style="font-size: 21px;font-family: 'Hind Vadodara', sans-serif;font-weight: 400;margin-left: 48px;margin-top: 0px;padding: 0px;height: 1.5rem;line-height: 0px;padding-top: 25px;color: rgba(0,0,0,0.5);">Product Design Intern</h1>
-                <p style="font-size: 21px;padding-top: 20px;font-family: 'Hind Vadodara';color: rgba(0,0,0,0.75);letter-spacing: normal;width: 520px;height: 120px;line-height: 30px;margin-bottom: 0px;margin-left: 48px;">I used UX to bring a sense of unity to the internal teams and the passionate fans affected by the pandemic.&nbsp;</p>
-                <a href="StubHub.html" style="width: 150px;margin-left: 48px;margin-top: auto;"><img id="cta1" class="justify-content-xl-start" style="margin-left: 0px;margin-top: auto;text-align: left;" src="assets/img/Primary%20Button.svg" height="50px" width="150px"></a>
+            <div class="d-flex flex-column projectDescription">
+                <h1 class="subtitle1" style="font-weight:700;color: rgba(0,0,0,0.85);">StubHub</h1>
+                <h1 class="subtitle">Product Design Intern</h1>
+                <p class="description">I participated in projects that helped the internal teams and the passionate fans worldwide.&nbsp;</p>
+                <a href="StubHub.html" class="cta"><img id="cta1" class="cta" src="assets/img/Primary%20Button.svg" height="50px" width="150px"></a>
             </div>
         </div>
     </div>
-    <ul class="nav footer-tabs" id="footer" style="height: auto;margin-top: 50px;margin-bottom: 50px;margin-left:15%;border-style: none;">
+    <ul class="nav footer-tabs" id="footer" >
         <li class="footer-item" style="border-style: none;"><a class="footer-link" href="mailto:b2wang@ucsd.edu" target="_blank" style="padding-left: 0px;">Email</a></li>
         <li class="footer-item" style="padding-right: 20px;padding-left: 20px;border-style: none;"><a class="footer-link" href="https://www.linkedin.com/in/boyanggwang/" target="_blank">Linkedin</a></li>
         <li class="footer-item" style="height: auto;border-style: none;"><a class="footer-link" href="https://drive.google.com/file/d/1RHVTm2yPFI6cT3KxqApNy1AMwff930z6/view?usp=sharing" target="_blank" style="padding-right: 20px;padding-left: 20px;">Resume</a></li>
@@ -147,7 +150,7 @@
             barid.className = "scrollbarbox hide"               
         }
 
-        if (y >= 2100){
+        if (y >= 1700){
             moreid.className = "moreproj show movein"
             totopid.className = "baselink show movein"
         } else {

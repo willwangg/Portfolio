@@ -1,8 +1,106 @@
 ::-moz-selection { background: #EB5600; color:white; }
 ::selection { background:#EB5600; color:white; }
 
+img{
+    height: auto;
+}
+
 body{
     position:relative;
+}
+
+nav{
+    height: 100px;
+    margin:0;
+    padding:0;
+    list-style: none;
+
+}
+
+nav img{
+    width: 70px;
+    position: absolute;
+    top: 30px;
+    left: 15%;
+}
+
+.nav-list{
+    float: right;
+    margin-right: 15%;
+    text-decoration: none;
+}
+
+.nav-list li{
+    display: inline-block;
+    line-height: 120px;
+    margin: 0 15px;
+}
+
+.nav-list li a{
+    position: relative;
+    color: black;
+    font-size: 18px; 
+    padding: 5px 0;
+}
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color:#EB5600;
+}
+
+label{
+    display:inherit;
+}
+
+label #btn,
+label #cancel{
+    color:#EB5600;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    margin-top: 20px;
+}
+
+#check{
+    display: none;
+}
+
+
+
+.largetit1{
+    margin: 10px 0px 25px 0px;
+    font-size: 40px;
+    line-height: 2.5rem;
+    font-weight: 700;
+}
+
+#prototit{
+    font-size:28px;
+    font-weight:500;
+    margin: 0px auto 0px auto;
+    color:rgba(0,0,0,0.85);
+}
+
+.largetit{
+    margin: 100px 0px 10px 0px;
+    padding-bottom:5px;
+    line-height:24px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color:rgba(0,0,0,0.5);
+}
+
+.headingsec{
+    width:880px;
+    margin: 100px auto 0px auto;
+}
+
+.contentsec{
+    width:680px; 
+    margin: 50px auto 0px auto;
 }
 
 .scrollbarbox{
@@ -38,6 +136,10 @@ body{
 
 .movein {
     animation: 0.7s ease-out 0s 1 slideInFromTop;
+}
+
+#morecard{
+    margin-top: 0px;
 }
 
 .moveright {
@@ -142,6 +244,7 @@ section .wave.wave4{
 
 .moreproj{
     margin-top: 200px;
+    width: 100%;
 }
 
 .baselink{
@@ -158,11 +261,13 @@ section .wave.wave4{
 
 .footer-tabs {
     border:1px transparent;
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
-    margin-top:200px;
-    margin-bottom: 20px;
-    margin-left:15%;margin-right:15%;
+    margin-top:100px;
+    margin-left:15%;
+    margin-right:15%;
+    margin-bottom: 50px;
+    height: auto;
+    border-style: none;
+    width:85%;
 }
 
 
@@ -170,6 +275,7 @@ section .wave.wave4{
     display: block;
     padding: 0.5rem 1rem;
     color: rgb(0,0,0);
+
 }
 
 
@@ -186,6 +292,7 @@ footer {
     margin-right: 15%;
     margin-top:200px;
     margin-bottom: 50px;
+    text-align:center;
 }
 
 .card{
@@ -244,7 +351,7 @@ footer {
     font-family: 'Hind Vadodara';
     color: rgba(0,0,0,0.75);
     letter-spacing: normal;
-    width: 100%;
+    width: 90%;
     height: 120px;
     line-height: 30px;
     margin-bottom: 0px;
@@ -297,7 +404,7 @@ footer {
 }
 
 .carddiv{
-    margin-top: 100px;
+    margin-top: 200px;
     margin-left:15%;
     margin-right:15%;
 }
@@ -307,19 +414,55 @@ footer {
     margin-top: 100px;
 }
 
-
-
-@media only screen and (min-width: 1680px) {
+.icon{
+    display:inline-block;
+    width:72px;
 }
 
-@media only screen and (max-width: 1440px) {
-
-    .card .cardimg{
-        width: 500px;
-    }
+.threecol{
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 35px;
 }
+
+.moretit{
+    margin-left:15%;
+    margin-bottom:0px;
+}
+
 
 @media only screen and (max-width: 1280px) {
+
+    .scrollbarbox{
+        position:fixed; 
+        width: 100%;
+        height: 0px;
+        margin-top:0px;
+        margin-left:0px;
+        transition: none;
+    }
+
+    .scroll_bar{
+        margin-top:-8px;
+        height: 3px;
+        width:100%;
+        background: rgba(0,0,0,0.1);
+    }
+    
+    #scroll_indicator{
+        height:100%;
+        width:0%;
+        background:#EB5600;
+    }
+
+    .totop{
+        display:none;
+    }
+
+    .scrollcontent{
+        display:none;
+    }
 
     .card .cardimg{
         width: 660px;
@@ -391,11 +534,62 @@ footer {
     
 }
 
-@media only screen and (max-width: 800px) {
-
-    .card .cardimg{
-        width: 450px;
+@media only screen and (max-width: 1080px) {
+    
+    nav img{
+        left: 5%;
     }
+
+    label #btn {
+        display: block;
+        margin-right: 5%;
+    }
+
+    .nav-list{
+        position: fixed;
+        top:0;
+        padding-top: 80px;
+        width: 100%;
+        height: 100vh;
+        background: #EB5600;
+        left: -100%;
+        text-align: center;
+        padding-left:0;
+        transition: all 0.5s;
+        z-index:100;
+    }
+
+    #selected{
+        color:white;
+    }
+    
+    .nav-list li{
+        display: block;
+        margin: 50px 0;
+        line-height: 10px;
+    }
+
+    .nav-list li a{
+        color: white;
+    }
+    
+    #check:checked ~ .nav-list{
+        left:0;
+    }
+
+    #check:checked ~ label #btn{
+        display: none;
+    }
+
+    #check:checked ~ label #cancel{
+        display: block;
+        position: fixed;
+        color: white;
+        z-index: 101;
+        margin-right:5%;
+        right:0px;
+    }
+
 
     .carddiv{
         display: flex;
@@ -408,13 +602,6 @@ footer {
         margin-bottom: 95px;
     }
 
-    .projectDescription{
-        margin-top: 10px;
-        padding-left: 0px;
-        width:450px;
-        position:relative;
-    }
-
     .name{
         font-size:56px;
     }
@@ -424,16 +611,136 @@ footer {
         margin-top:0px;
     }
 
+    .headingsec{
+      width: 90%;  
+    }
 
+    .contentsec{
+        width: 90%; 
+    }
+
+    .unaligned{
+        width: 90%;
+    }
+
+    .aligned{
+        width: 90%;
+    }
+
+    iframe{
+        width:90%;
+        height:400px;
+    }
+
+    .content {
+        font-size: 21px;
+        font-family: 'Hind Vadodara';
+        /*font-weight: 300;*/
+        margin: 5px auto 0px auto;
+        width: 90%;
+        color: rgba(0,0,0,0.65);
+        line-height: 34px;
+    }
+
+    .smalltit {
+        font-size: 40px;
+        font-family: 'Hind Vadodara';
+        font-weight: 500;
+        color: rgba(0,0,0,0.9);
+        margin: 100px auto 10px auto;
+        width: 90%;
+        padding-bottom: 20px;
+    }
+
+    .caption {
+        width: 90%;
+    }
+
+    .threecol{
+        width: 90%;
+    }
+
+    .prototype {
+        width: 35%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
+    .prototypecontainer{
+        display:initial;
+        margin-top:50px;
+        width: 90%;
+        height: auto;
+        margin: 30px auto 50px auto;
+    }
     
+    .prototypecaption{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        padding:0;
+    }
+    
+    .prototypecaption {
+        font-size: 21px;
+        font-family: 'Hind Vadodara';
+        width: 90%;
+    }
+    
+    .description{
+        font-size: 21px;
+        padding-top: 20px;
+        font-family: 'Hind Vadodara';
+        color: rgba(0,0,0,0.75);
+        letter-spacing: normal;
+        width: 100%;
+        height: 120px;
+        line-height: 30px;
+        margin-bottom: 0px;
+    }
 
+    .footer-tabs {
+        margin-left:0;
+        margin-right:0;
+        width:100%;
+        justify-content:center;
+    }
+
+    .footer-link{
+        display: block;
+        padding: 0.5rem 1rem;
+        color: rgb(0,0,0);
+    }
+    
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 660px) {
 
 
-    .card .cardimg{
-        width: 300px;
+    nav img{
+        top: 27px;
+        width: 50px;
+    }
+
+    .nav-list li a{
+        font-size: 16px; 
+    }
+
+    .nav-list li a:hover{
+        color:white;
+        font-size: 16px; 
+        font-weight: 500;
+    }
+
+    label #btn,
+    label #cancel{
+    margin-top: 5px;
     }
 
     .carddiv{
@@ -441,21 +748,32 @@ footer {
         flex-direction: column!important;
         justify-content: center;
         align-items: center;
-        margin: auto;
-        width: 300px;
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+        margin-right: 5%;
         margin-top:80px;
         margin-bottom:20px;
     }
 
+    .card {
+        width: 100%;
+        margin-left: auto;
+        margin-right:auto;
+    }
+
+    .card .cardimg{
+        width: 100%;
+    }
+
     .projectDescription{
         margin-top: 0px;
-        padding-left: 0px;
-        width:300px;
+        width: 100%;
         position:relative;
     }
 
     .name{
-        font-size:32px;
+        font-size:40px;
         margin-bottom: 0px;
         padding-bottom: 0px;
         text-align: center;
@@ -476,8 +794,7 @@ footer {
     }
 
     .cta{
-        width: 80px;
-        top:0px;
+        display:none;
     }
 
     .subtitle1{
@@ -493,7 +810,46 @@ footer {
         width:10px;
     }
 
-    .name{
-        margin-top:40px;
+    .largetit{
+        font-size:24px;
+        line-height: 28px;
     }
+
+    .largetit1{
+        font-size:32px;
+        line-height: 30px;
+    }
+
+    .aligned{
+        margin-bottom: 20px;
+    }
+
+    .content {
+        font-size: 16px;
+        line-height: 34px;
+        line-height: 28px;
+    }
+
+    .prototypecaption{
+        font-size:16px;
+    }
+
+    .smalltit {
+        font-size: 24px;
+        line-height: 20px;
+        margin-top: 40px;
+    }
+
+    #prototit{
+        font-size:21px;
+    }
+
+    .caption {
+        font-size: 12px;
+    }
+
+    .footer-link{
+        font-size:14px;
+    }
+
 }

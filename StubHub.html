@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body style="background: rgb(255,255,255);">
     <div class="scrollbarbox hide" id="scrollbarbox">
-        <p class="content" style="font-size:16px; font-weight:500; color:rgba(0,0,0,0.5); margin-top: 0px; line-height: 20px;">PRODUCT DESIGN INTERN</p>
-        <p class="content" style="font-size:24px;font-weight: 700;color:rgb(0,0,0);margin-top:0px;">STUBHUB</p>
+        <p class="content scrollcontent" style="font-size:16px; font-weight:500; color:rgba(0,0,0,0.5); margin-top: 0px; line-height: 20px;">PRODUCT DESIGN INTERN</p>
+        <p class="content scrollcontent" style="font-size:24px;font-weight: 700;color:rgb(0,0,0);margin-top:0px;">STUBHUB</p>
         <div class="scroll_bar">
             <div id="scroll_indicator"></div>
         </div>
@@ -26,66 +27,97 @@
         </div>
     </div>
 
-    <nav class="navbar navbar-light navbar-expand-md projectNav" id="nav" style="height: 120px;/*padding-right: 0px;*//*padding-left: 0px;*/width: 100%;">
-        <div class="container-fluid" id="nav-padding"><a class="navbar-brand" href="index.html" style="padding-left: 0px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1" style="width: 100%;">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item"></li>
-                    <li class="nav-item"><a class="nav-link" id="selected" href="#" style="margin-right: 70px;padding: 0px;">Works</a></li>
-                    <li class="nav-item"><a class="nav-link" id="unselected" href="me.html" style="padding: 0px;padding-left: 0px;margin-left: 0px;padding-right: 0px;padding-bottom: 0px;">Me</a></li>
-                </ul>
-            </div>
-        </div>
+    <nav id="nav">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa fa-bars" id="btn"></i>
+            <i class="fa fa-times" id="cancel"></i>
+        </label>
+        <a href="index.html"><img src="assets/img/logo.svg"></a>
+        <ul class="nav-list">
+            <li><a href="index.html">Works</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="me.html">About Me</a></li>
+        </ul>
     </nav>
+
     <div>
-        <div style="width:880px; margin: 100px auto 0px auto;">
-            <h1 class="movein smalltit" style="margin: 100px 0px 10px 0px;padding-bottom:5px;line-height:24px;font-size: 1.5rem;font-weight: 500;color:rgba(0,0,0,0.5);">PRODUCT DESIGN INTERN</h1>
-            <h1 class="movein smalltit" style="margin: 10px 0px 25px 0px;font-size: 40px;line-height: 2.5rem;;font-weight: 700;">STUBHUB</h1>
-            <img class="movein" src="assets/img/SH_Thumbnail.jpg" width="880px" style="display:block;">
+        <div class="headingsec">
+            <h1 class="movein largetit" >PRODUCT DESIGN INTERN</h1>
+            <h1 class="movein largetit1" >STUBHUB</h1>
+            <img class="movein" src="assets/img/SH_Thumbnail.jpg" width="100%" height="auto" style="display:block;">
         </div>
-        <div style="width:680px; margin: 50px auto 0px auto;"></div>
+        <div class="contentsec"></div>
             <p class="content"><span style="font-weight: bold;color: rgba(0,0,0,0.9);">Time</span><strong>&nbsp;-&nbsp;</strong>Fall 2020</p>
             <p class="content"><span style="color: rgb(0,0,0,0.9);font-weight: bold;">Role</span><strong>&nbsp;-&nbsp;</strong>Product Design Intern</p>
             <p class="content"><span style="color: rgba(0,0,0,0.9);font-weight: bold;">Colleagues</span><strong>&nbsp;-&nbsp;</strong>Design Managers, UX Designers, Product Managers, and various Developer Teams</p>
             <p class="content" style="margin-top: 10px;">During my 3 months at StubHub, I had the opportunity to wear multiple hats and work on different projects as an intern. The projects I worked on range from ticket delivery, system messaging, to designing internal tools.<br></p>
-            <p class="smalltit" style="margin-top: 120px;">#1 - Service Blueprints</p>
-            <p class="content">Collaborating with my Design Manager and Product Managers, I produced <span class="highlight">5 service blueprints</span>&nbsp;that captured StubHub’s ticket delivery &amp; fulfillment services, from frontend experiences to backend processes. <span class="highlight">2 to 3 actionable painpoints&nbsp;</span>were discovered for each type of delivery method.<br></p><img class="aligned" src="assets/img/StubHub/generalBP.jpg" style="margin-bottom: -10px;">
-            <p id="caption" class="caption">StubHub's Overall Service(blurred for confidentiality)</p>
-            <p class="smalltit" style="margin-top: 50px;font-size: 32px;">The Problem</p>
-            <p class="content">Delivering the tickets from sellers to buyers is one of the core stages of StubHub’s services. However, there are a <span class="highlight">LOT</span>&nbsp;of delivery methods for live events, and such variety makes the delivery &amp; fulfillment process innately complex. By making service blueprints, we aimed to lay out the major delivery methods in detail and pinpoint potential pain points in the delivery process.<br></p><img class="aligned" src="assets/img/StubHub/fourBP.jpg" style="margin-bottom: 5px;">
-            <p id="caption-1" class="caption">Service Blueprints for StubHub's four most popular ticket medium(blurred for confidentiality)</p>
-            <p class="smalltit" style="margin-top: 50px;font-size: 32px;">What I Learned</p>
-            <p class="content">A lot of times, the <span class="highlight">problems</span>&nbsp;that affect user experiences <span class="highlight">reside in the backend processes</span>. As a Product Designer, it is my responsibility to dig into the root of problems. For this project, I spent a lot of time communicating with many different development teams and trying to make sense of complex backend processes. At the end of this project, I realized the technical ambiguities in large-scale services and managed to identify solvable problems within ambiguity.<br></p>
+            <p class="smalltit" style="margin-top: 120px;">Impact</p>
+            <p class="content">Collaborating with my Design Manager and Product Managers, I produced <span class="highlight">5</span>&nbsp;service blueprints that captured core problems within StubHub’s ticket delivery & fulfillment services. Then, I designed a new template system for StubHub that aims to solve some of the core problems discovered.
+            </p>
+            <p class="smalltit">The Story Begins</p>
+            <p class="content">The story begins with a meeting between the design team and a product manager(PM). In the meeting, the PM mentioned some ongoing problems in StubHub’s processes. Those problems were very general, like high amounts of Customer Support calls and delayed processes. I was given the task to dig down to the root of these problems and potentially, solve them.
+            <p class="smalltit">Finding the Cause
+                </p>
+            <p class="content">At first, these problems were so general that I found it difficult to navigate. Fortunately, my design mentor suggested a direction, specifically, a method, that I could use to get down to the causes of these problems - <span class="highlight">Service Blueprints</span>&nbsp;. 
+            </p>
+            <img class="aligned" src="assets/img/StubHub/sbpexample.png" style="margin-bottom: 0px;">
+            <p id="caption" class="caption">Service Blueprint Example(https://www.nngroup.com/articles/service-blueprints-definition/)/</p>
+            <p class="content">Service blueprints illustrate a comprehensive understanding of an organization’s <span class="highlight">service and the underlying technical processes</span>&nbsp; — both seen and unseen to the user. By laying out StubHub’s core ticketing service, I thought it might be easier for me to pinpoint the stages at which the problems emerge.
+            </p>
+            <p class="smalltit">Making the Blueprint
+            </p>
+            <p class="content">StubHub is a large company with diverse teams. To create a service blueprint that covers the whole service line, I reached out to different teams and scheduled Q&A meetings to learn what each team was doing. 
+            </p>
+            <img class="aligned" src="assets/img/StubHub/generalBP.jpg" style="margin-bottom: 0px;">
+            <p id="caption" class="caption">The service blueprint I created(details not shown for confidentiality purposes).</p>
+            <p class="content">These meetings were similar to user interviews, as I prepared protocols beforehand, actively listened to the team members during the meeting, and recorded necessary information for the blueprint. Each team was like a puzzle piece, by putting all of the pieces together, I ended up with a nice service blueprint that summarizes StubHub’s core services.
+            </p>
+            <p class="smalltit">More Blueprints - Smaller Ones
+            </p>
+            <p class="content">After I created the blueprint, however, I still could not find the causes of the problems. In order to capture the entire service without being too overwhelming, the description for each step on the blueprint was intentionally kept concise and general. The problems, on the other hand, seem to exist in the technical details of certain processes.
+            </p>
+            <img class="aligned" src="assets/img/StubHub/fourBP.jpg" style="margin-bottom: 0px;">
+            <p id="caption" class="caption">From left to right: Transfer Tickets, Physical Tickets, PDF Tickets, Barcode Tickets.</p>
+            <p class="content">I decided to make smaller blueprints that specifically capture the delivery & fulfillment process of StubHub’s services. This time, I created a service blueprint for each of StubHub’s 4 core ticket media: mobile transfer tickets, physical tickets, PDF tickets, and Barcode tickets.
+            </p>
+            <p class="smalltit">Taking Out the Roots
+            </p>
+            <p class="content">The smaller blueprints were able to capture the backend technical processes in much fuller details(Yes!).  As I was analyzing these root causes, I discovered that a lot of the problems resulted from StubHub’s inconsistent communication system. 
+            </p>
+            <p class="content" style="margin-top: 100px;font-size:32px;line-height: normal;color:black;"><span class="highlight"><img class="icon" src="assets/img/StubHub/Imagine.svg">    Imagine - </span>
+            </p>
+            <p class="content" style="margin-top: 25px;font-size:32px;line-height: normal;color:black;">You could not make it to the concert and just sold your tickets on StubHub. 
+            </p>
+            <p class="content" style="margin-top:30px;margin-bottom:130px;">Now, you received an email with instructions on how to deliver your tickets to your buyer, and a confirm button. You thought you would receive the sale money after you delivered your tickets, but guess what - your sale money will be delayed if you don’t tap the confirm button! (Note: this is an fictional analogy of the findings).
+            </p>
+            <p class="smalltit">Critical Templates</p>
+            <p class="content">After I presented my findings to the team, my next task was to improve StubHub’s current email system. To begin, I gathered 5 critical email templates based on StubHub’s data.
+            </p>
+            <p class="smalltit">Key Elements of an Email</p>
+            <p class="content">By analyzing these emails, I identified some recurring elements that are present in most of the them -
+            </p>
+            <p class="content">To improve upon the current system, my goal was to iterate upon these existing elements while trying to give them a more modern look & feel.
+            </p>
+            <p class="smalltit">Redesigned Prototypes</p>
+            <p class="content">By analyzing these emails, I identified some recurring elements that are present in most of the them -
+            </p>
         </div>
     </div>
-    <div style="margin-top: 80px;margin-right: auto;margin-left: auto;">
-        <p class="smalltit" style="padding-right: auto;padding-left: auto;">#2 - Designing Internal Platforms</p>
-        <p class="content">Working with Tech Leads from Dev Teams, I designed the experiences and interfaces of <span class="highlight">2 new features</span>&nbsp;for StubHub’s internal Trust&amp;Security platform.<br></p><img class="aligned" src="assets/img/StubHub/wireframes.png" style="margin-bottom: 5px;">
-        <p id="caption-2" class="caption">Wireframes for StubHub's Internal Web Platforms</p>
-        <p class="smalltit" style="padding-right: auto;padding-left: auto;margin-top: 50px;font-size: 32px;">Accelerating Task Flows for Internal Users</p>
-        <p class="content">Users of these internal tools are mostly people from other departments of the company. When designing for these stakeholders, the essential job for me was to understand how they navigate their tasks as of now. For this project, I communicated heavily with the internal users and made sure the experience I designed not only aligned, but also accelerated their current task flow.<br></p>
-        <p class="smalltit" style="padding-right: auto;padding-left: auto;margin-top: 50px;font-size: 32px;">What I Learned</p>
-        <p class="content">When it comes to internal platforms, <span class="highlight">Efficiency is Key.&nbsp;</span>In this project, I focused on and learned how to utilize data-visualizations efficiently as an element that helps display and manage data faster.<br></p>
-    </div>
-    <div style="margin-top: 80px;margin-right: auto;margin-left: auto;">
-        <p class="smalltit" style="padding-right: auto;padding-left: auto;">#3 - Messaging System</p>
-        <p class="content">In this project, I worked with my mentor designer and Product Managers to iterate and improve StubHub’s messaging system. I gathered useful insights through competitor analysis on StubHub’s direct and indirect competitors and am designing new messaging templates for StubHub’s email messaging system.<br></p>
-        <p class="smalltit" style="padding-right: auto;padding-left: auto;margin-top: 50px;font-size: 21px;color: rgba(0,0,0,0.25);">This project is currently under work. Contact me for details :).</p>
-    </div>
     <div class="moreproj" id="next">
-        <p style="font-size: 1.7rem;font-weight:500;font-family: 'Hind Vadodara', sans-serif;margin-left: 15%;color: rgba(0,0,0,0.85);">Up Next</p>
-        <div class="d-flex flex-row moveright" style="margin-top: 50px;border-style: none;margin-bottom: 95px;width: 100%;padding-left:15%;">
-            <a href="xplore.html"><div class="card" id="card"><img class="cardimg" id="cardimg" src="assets/img/Xplore%20Thumbnail.jpg" width="550px" style="box-shadow: 0px 4px 10px rgba(0,0,0,0.25);">
+        <p class="smalltit moretit">Up Next</p>
+        <div class="d-flex flex-row carddiv moveright" id="morecard">
+            <a href="xplore.html"><div class="card" id="card2"><img class="cardimg" id="cardimg2" src="assets/img/Xplore%20Thumbnail.jpg" style="box-shadow: 0px 4px 10px rgba(0,0,0,0.25);">
             </div></a>
-            <div class="d-flex flex-column">
-                <h1 class="justify-content-xl-start" style="font-size: 1.7rem;font-weight:700;font-family: 'Hind Vadodara', sans-serif;margin-left: 48px;color: rgba(0,0,0,0.85);height: auto;line-height: 0px;padding: 0px;padding-top: 25px;margin-top: 0px;">XPlore UCSD</h1>
-                <h1 style="font-size: 21px;font-family: 'Hind Vadodara', sans-serif;font-weight: 400;margin-left: 48px;margin-top: 0px;padding: 0px;height: 1.5rem;line-height: 0px;padding-top: 25px;color: rgba(0,0,0,0.5);">Product Design 0 to 1</h1>
-                <p style="font-size: 21px;padding-top: 20px;font-family: 'Hind Vadodara';color: rgba(0,0,0,0.75);letter-spacing: normal;width: 450px;height: 120px;line-height: 30px;margin-bottom: 0px;margin-left: 48px;">I collaborated with the engineers to research, design and develop a mobile app from scratch.</p>
-                <a href="xplore.html" style="width: 150px;margin-top: auto;margin-left: 48px;"><img id="cta1" class="justify-content-xl-start" style="margin-top: auto;text-align: left;" src="assets/img/Primary%20Button.svg" height="50px" width="150px"></a>
+            <div class="d-flex flex-column projectDescription">
+                <h1 class="subtitle1" style="font-weight:700;color: rgba(0,0,0,0.85);">XPlore UCSD</h1>
+                <h1 class="subtitle">Product Design 0 to 1</h1>
+                <p class="description" >I worked with a student team and designed a mobile app from scratch.</p>
+                <a href="xplore.html" class="cta"><img id="cta2" class="cta" style="margin-top: auto;text-align: left;" src="assets/img/Primary%20Button.svg" height="50px" width="150px"></a>
             </div>
         </div>
     </div>
-    <ul class="nav footer-tabs" id="footer" style="height: auto;margin-top: 50px;margin-bottom: 50px;margin-left:15%; border-style: none;">
+    <ul class="nav footer-tabs" id="footer" >
         <li class="footer-item" style="border-style: none;"><a class="footer-link" href="mailto:b2wang@ucsd.edu" target="_blank" style="padding-left: 0px;">Email</a></li>
         <li class="footer-item" style="padding-right: 20px;padding-left: 20px;border-style: none;"><a class="footer-link" href="https://www.linkedin.com/in/boyanggwang/" target="_blank">Linkedin</a></li>
         <li class="footer-item" style="height: auto;border-style: none;"><a class="footer-link" href="https://drive.google.com/file/d/1RHVTm2yPFI6cT3KxqApNy1AMwff930z6/view?usp=sharing" target="_blank" style="padding-right: 20px;padding-left: 20px;">Resume</a></li>
@@ -148,7 +180,7 @@
             barid.className = "scrollbarbox hide"               
         }
 
-        if (y >= 4200){
+        if (y >= 3900){
             moreid.className = "moreproj show movein"
             totopid.className = "baselink show movein"
         } else {

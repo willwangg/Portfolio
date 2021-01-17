@@ -1,0 +1,534 @@
+::-moz-selection { background: #EB5600; color:white; }
+::selection { background:#EB5600; color:white; }
+
+body{
+    position:relative;
+}
+
+.scrollbarbox{
+    position:fixed;
+    margin-top: 50px;
+    margin-left:50px;
+    width: 220px;
+    height: 190px;
+    transition: all 1s;
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-10%);
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-0.5%);
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+        transform: translateX(0);
+    }
+}
+
+.movein {
+    animation: 0.7s ease-out 0s 1 slideInFromTop;
+}
+
+.moveright {
+    animation: 0.7s ease-out 0s 1 slideInFromLeft;
+}
+
+
+.scroll_bar{
+    margin-top:20px;
+    height: 2px;
+    width:100%;
+    background: rgba(0,0,0,0.1);
+}
+
+#scroll_indicator{
+    height:100%;
+    width:0%;
+    background:#EB5600;
+}
+
+.hide {
+    transition: 0.5s;
+    opacity: 0;
+    left: -1%;
+}
+
+.show {
+    opacity: 1;
+    left: 0;
+}
+
+section{
+    position:absolute;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    z-index: -100;
+}
+
+section .wave{
+    position: absolute;
+    top: 600px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background:url(../img/waves.png);
+    background-size: 2000px 100px;
+}
+
+section .wave.wave1{
+    animation: animate 35s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    top: 630px;
+    animation-delay:0s;
+}
+
+@keyframes animate{
+    0%{
+        background-position-x:0;
+    }
+    100%{
+        background-position-x:1000px;
+    }
+}
+
+section .wave.wave2{
+    animation: animate2 65s linear infinite;
+    z-index: 1000;
+    opacity: 0.5;
+    animation-delay:-20s;
+    bottom: 10px;
+}
+
+@keyframes animate2{
+    0%{
+        background-position-x:0;
+    }
+    100%{
+        background-position-x:1000px;
+    }
+}
+
+section .wave.wave3{
+    animation: animate 25s linear infinite;
+    z-index: 1000;
+    opacity: 0.2;
+    animation-delay:-25s;
+    top: 620px;
+}
+
+section .wave.wave4{
+    animation: animate2 20s linear infinite;
+    z-index: 1000;
+    opacity: 0.7;
+    animation-delay:-35s;
+    top: 670px;
+}
+
+
+
+
+.moreproj{
+    margin-top: 200px;
+}
+
+.baselink{
+    font-size:20px;
+    font-weight: 400;
+    color: #EB5600;
+    text-decoration: none;
+}
+
+.baselink:hover{
+    color: #ecaa83;
+    text-decoration:none;
+}
+
+.footer-tabs {
+    border:1px transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    margin-top:200px;
+    margin-bottom: 20px;
+    margin-left:15%;margin-right:15%;
+}
+
+
+.footer-link{
+    display: block;
+    padding: 0.5rem 1rem;
+    color: rgb(0,0,0);
+}
+
+
+.footer-link:hover{
+    color: #EB5600;
+    text-decoration:none;
+}
+
+
+footer {
+    display:flex;
+    flex-direction: row;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top:200px;
+    margin-bottom: 50px;
+}
+
+.card{
+    display:block;
+    border-radius: 32px;
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+
+.card .cardimg{
+    display:block;
+    border: none;
+    border-radius: 0px;
+    transition: 0.1s ease-in;
+    width:550px;
+}
+
+.card:hover {
+    border: 2px solid #EB5600;
+    border-radius: 32px;
+}
+
+.card:hover .cardimg{
+    border-radius: 30px;
+}
+
+.prototype {
+    width: 300px;
+}
+
+.prototypecontainer{
+    display:flex;
+    flex-direction:row;
+    margin-top:50px;
+    width: 680px;
+    margin: 30px auto 50px auto;
+}
+
+.prototypecaption{
+    display:flex;
+    flex-direction:column;
+    width: 100%;
+    justify-content: center;
+    padding-left:50px;
+}
+
+.prototypecaption {
+    font-size: 21px;
+    font-family: 'Hind Vadodara';
+    width: 90%;
+}
+
+.description{
+    font-size: 21px;
+    padding-top: 20px;
+    font-family: 'Hind Vadodara';
+    color: rgba(0,0,0,0.75);
+    letter-spacing: normal;
+    width: 100%;
+    height: 120px;
+    line-height: 30px;
+    margin-bottom: 0px;
+}
+
+.projectDescription{
+    padding-left:48px;
+    width:100%;
+}
+
+.title{
+    font-size: 32px;
+    letter-spacing: NORMAL;
+    margin-top: 50px;
+    color: rgba(0,0,0,0.5);
+    font-family: 'Hind Vadodara', sans-serif;
+    font-weight: normal;
+    width: 65%;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+.subtitle{
+    font-size: 21px;
+    font-family: 'Hind Vadodara', sans-serif;
+    font-weight: 400;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 0px;
+    height: 1.5rem;
+    line-height: 0px;padding-top: 25px;
+    color: rgba(0,0,0,0.5);
+}
+
+.subtitle1{
+    font-size: 1.7rem;
+    font-family: 'Hind Vadodara', sans-serif;
+    font-weight: 400;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 0px;
+    height: 1.5rem;
+    line-height: 0px;padding-top: 25px;
+    color: rgba(0,0,0,0.5);
+}
+
+.cta{
+    margin-top:auto;
+    width:150px;
+}
+
+.carddiv{
+    margin-top: 100px;
+    margin-left:15%;
+    margin-right:15%;
+}
+
+.name{
+    margin-left: -2px;
+    margin-top: 100px;
+}
+
+.icon{
+    display:inline-block;
+    width:72px;
+}
+
+
+
+@media only screen and (min-width: 1680px) {
+}
+
+@media only screen and (max-width: 1440px) {
+
+    .card .cardimg{
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+
+    .scrollbarbox{
+        position:fixed; 
+        width: 100%;
+        height: 0px;
+        margin-top:0px;
+        margin-left:0px;
+        transition:none;
+    }
+
+    .scroll_bar{
+        margin-top:0px;
+        height: 3px;
+        width:100%;
+        background: rgba(0,0,0,0.1);
+    }
+    
+    #scroll_indicator{
+        height:100%;
+        width:0%;
+        background:#EB5600;
+    }
+
+    .totop{
+        display:none;
+    }
+
+    .scrollcontent{
+        display:none;
+    }
+
+    .card .cardimg{
+        width: 660px;
+    }
+
+    .carddiv{
+        display: flex;
+        flex-direction: column!important;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width:660px;
+        margin-top: 100px;
+        margin-bottom: 95px;
+    }
+
+    /*.carddiv:hover{
+        display:block;
+        border-style: solid;
+    }*/ 
+
+    .projectDescription{
+        margin-top: 10px;
+        padding-left: 0px;
+        width:660px;
+        position:relative;
+    }
+
+    .cta{
+        position:absolute;
+        top:6px;
+        right:0;
+    }
+
+
+    .title{
+        font-size:21px;
+        margin-top:0px;
+    }
+
+    section .wave.wave1{
+        top: 550px;
+    }
+    
+    
+    section .wave.wave2{
+        animation: animate2 65s linear infinite;
+        z-index: 1000;
+        opacity: 0.5;
+        animation-delay:-20s;
+        bottom: 110px;
+    }
+    
+    section .wave.wave3{
+        animation: animate 25s linear infinite;
+        z-index: 1000;
+        opacity: 0.2;
+        animation-delay:-25s;
+        top: 520px;
+    }
+    
+    section .wave.wave4{
+        animation: animate2 20s linear infinite;
+        z-index: 1000;
+        opacity: 0.7;
+        animation-delay:-35s;
+        top: 570px;
+    }
+    
+}
+
+@media only screen and (max-width: 1080px) {
+
+    .card .cardimg{
+        width: 450px;
+    }
+
+    .carddiv{
+        display: flex;
+        flex-direction: column!important;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 450px;
+        margin-top: 100px;
+        margin-bottom: 95px;
+    }
+
+    .projectDescription{
+        margin-top: 10px;
+        padding-left: 0px;
+        width:450px;
+        position:relative;
+    }
+
+    .name{
+        font-size:56px;
+    }
+
+    .title{
+        font-size:21px;
+        margin-top:0px;
+    }
+
+
+    
+
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    .card .cardimg{
+        width: 300px;
+    }
+
+    .carddiv{
+        display: flex;
+        flex-direction: column!important;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 300px;
+        margin-top:80px;
+        margin-bottom:20px;
+    }
+
+    .projectDescription{
+        margin-top: 0px;
+        padding-left: 0px;
+        width:300px;
+        position:relative;
+    }
+
+    .name{
+        font-size:32px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        text-align: center;
+    }
+
+    .title{
+        font-size:16px;
+        margin-top:0px;
+        padding-top:0px;
+        text-align: center;
+    }
+
+    .description{
+        font-size:16px;
+        line-height:24px;
+        padding-top: 16px;
+        height: 80px;
+    }
+
+    .cta{
+        width: 80px;
+        top:0px;
+    }
+
+    .subtitle1{
+        font-size:21px;
+    }
+
+    .subtitle{
+        font-size:16px;
+        padding-top:20px;
+    }
+
+    .navbar-brand{
+        width:10px;
+    }
+
+    .name{
+        margin-top:40px;
+    }
+}

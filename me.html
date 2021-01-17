@@ -12,19 +12,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
-<body id="body" style="/*width: 100%;*/margin-left: 15%;margin-right: 15%;background: rgb(255,255,255);">
-    <nav class="navbar navbar-light navbar-expand-md" id="nav" style="height: 120px;padding-right: 0px;padding-left: 0px;width: 100%;">
-        <div class="container-fluid" id="nav-padding"><a class="navbar-brand" href="index.html" style="padding-left: 0px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1" style="width: 100%;">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item"></li>
-                    <li class="nav-item"><a class="nav-link" id="unselected" href="index.html" style="margin-right: 70px;padding: 0px;">Works</a></li>
-                    <li class="nav-item"><a class="nav-link" id="selected" href="me.html" style="padding: 0px;padding-left: 0px;margin-left: 0px;padding-right: 0px;padding-bottom: 0px;">Me</a></li>
-                </ul>
-            </div>
-        </div>
+<body id="body" >
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa fa-bars" id="btn"></i>
+            <i class="fa fa-times" id="cancel"></i>
+        </label>
+        <a href="index.html"><img src="assets/img/logo.svg"></a>
+        <ul class="nav-list">
+            <li><a href="index.html">Works</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="me.html" id="selected">About Me</a></li>
+        </ul>
     </nav>
     <div class="moveright d-flex justify-content-center" style="margin-top: 50px;width: 100%;"><img style="width: 60%;" src="assets/img/selfportrait.jpg" width="500px">
         <div class="d-flex flex-column justify-content-start justify-content-xl-center align-items-xl-center" style="padding: 0px;padding-left: 40px;width: 40%;"><span class="d-xl-flex justify-content-xl-center align-items-xl-center title-me" id="title-me" style="height: 50px;width: 270px;/*font-size: 32px;*/">Designs. Games. Cakes.</span></div>
@@ -44,7 +47,7 @@
         <div class="d-flex flex-row highlight" style="width: 680px;margin-right: auto;margin-left: auto;margin-top: 10px;"><img src="assets/img/About/Baking/strawberry.jpg" style="margin-top: 0px;" width="33%" height="50%"><img style="margin-left: 20px;" src="assets/img/About/Baking/opera.jpg" width="33%" height="50%"><img src="assets/img/About/Baking/cheesecake.jpg" width="33%" style="margin-left: 20px;"></div>
         <div class="d-flex flex-row highlight" style="width: 680px;margin-right: auto;margin-left: auto;margin-top: 10px;"><img src="assets/img/About/Baking/swiss.jpg" style="margin-top: 0px;" width="33%" height="50%"><img style="margin-left: 20px;" src="assets/img/About/Baking/sponge.jpg" width="33%" height="50%"><img src="assets/img/About/Baking/freji.jpg" width="33%" style="margin-left: 20px;"></div>
     </div>
-    <ul class="nav footer-tabs" id="footer" style="height: auto;margin-top: 200px;margin-bottom: 50px;border-style: none;">
+    <ul class="nav footer-tabs" id="footer" >
         <li class="footer-item" style="border-style: none;"><a class="footer-link" href="mailto:b2wang@ucsd.edu" target="_blank" style="padding-left: 0px;">Email</a></li>
         <li class="footer-item" style="padding-right: 20px;padding-left: 20px;border-style: none;"><a class="footer-link" href="https://www.linkedin.com/in/boyanggwang/" target="_blank">Linkedin</a></li>
         <li class="footer-item" style="height: auto;border-style: none;"><a class="footer-link" href="https://drive.google.com/file/d/1RHVTm2yPFI6cT3KxqApNy1AMwff930z6/view?usp=sharing" target="_blank" style="padding-right: 20px;padding-left: 20px;">Resume</a></li>

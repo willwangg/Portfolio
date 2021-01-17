@@ -3,13 +3,6 @@
   color: inherit;
 }
 
-.navigation-clean .navbar-brand:hover {
-  color: #222;
-}
-
-.navigation-clean.navbar-dark .navbar-brand:hover {
-  color: #f0f0f0;
-}
 
 .navigation-clean .navbar-brand img {
   height: 100%;
@@ -296,8 +289,6 @@ p {
   margin-right: 15%;
 }
 
-.unaligned {
-}
 
 #link a {
   color: rgb(235,86,0);
@@ -305,7 +296,7 @@ p {
 
 .caption {
   width: 680px;
-  margin: 0px auto 30px;
+  margin: 10px auto 50px auto;
   font-size: 16px;
   font-family: 'Hind Vadodara';
   padding: 0;

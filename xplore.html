@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body style="background: rgb(255,255,255);">
     <div class="scrollbarbox hide" id="scrollbarbox">
-        <p class="content" style="font-size:16px; font-weight:500; color:rgba(0,0,0,0.5); margin-top: 0px; line-height: 20px;">PRODUCT DESIGN</p>
-        <p class="content" style="font-size:24px;font-weight: 700;color:rgb(0,0,0);margin-top:0px;">XPLORE UCSD</p>
+        <p class="content scrollcontent" style="font-size:16px; font-weight:500; color:rgba(0,0,0,0.5); margin-top: 0px; line-height: 20px;">PRODUCT DESIGN</p>
+        <p class="content scrollcontent" style="font-size:24px;font-weight: 700;color:rgb(0,0,0);margin-top:0px;">XPLORE UCSD</p>
         <div class="scroll_bar">
             <div id="scroll_indicator"></div>
         </div>
@@ -25,26 +26,27 @@
         <a class="baselink" href="#nav" id="next2">Back to Top</a>
         </div>
     </div>
-    
 
-    <nav class="navbar navbar-light navbar-expand-md projectNav" id="nav" style="height: 120px;/*padding-right: 0px;*//*padding-left: 0px;*/width: 100%;">
-        <div class="container-fluid" id="nav-padding"><a class="navbar-brand" href="index.html" style="padding-left: 0px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1" style="width: 100%;">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item"></li>
-                    <li class="nav-item"><a class="nav-link" id="selected" href="#" style="margin-right: 70px;padding: 0px;">Works</a></li>
-                    <li class="nav-item"><a class="nav-link" id="unselected" href="me.html" style="padding: 0px;padding-left: 0px;margin-left: 0px;padding-right: 0px;padding-bottom: 0px;">Me</a></li>
-                </ul>
-            </div>
-        </div>
+    <nav id="nav">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa fa-bars" id="btn"></i>
+            <i class="fa fa-times" id="cancel"></i>
+        </label>
+        <a href="index.html"><img src="assets/img/logo.svg"></a>
+        <ul class="nav-list">
+            <li><a href="index.html">Works</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="me.html">About Me</a></li>
+        </ul>
     </nav>
     
-    <div style="width:880px; margin: 100px auto 0px auto;">
-        <h1 class="movein smalltit" style="margin: 100px 0px 10px 0px;padding-bottom:5px;line-height:24px;font-size: 1.5rem;font-weight: 500;color:rgba(0,0,0,0.5);">PRODUCT DESIGN</h1>
-        <h1 class="movein smalltit" style="margin: 10px 0px 25px 0px;font-size: 40px;line-height: 2.5rem;;font-weight: 700;">XPLORE UCSD</h1>
-        <img class="movein" src="assets/img/Xplore Thumbnail.jpg" width="880px" style="display:block;">
+    <div class="headingsec">
+        <h1 class="movein largetit" >PRODUCT DESIGN</h1>
+        <h1 class="movein largetit1" >XPLORE UCSD</h1>
+        <img class="movein" src="assets/img/Xplore/MockUp.jpg" width="100%" height="auto" style="display:block;">
     </div>
-        <div style="width:680px; margin: 50px auto 0px auto;"></div>
+        <div class="contentsec"></div>
         <p class="content"><span style="font-weight: bold;color: rgb(0,0,0);">Time -&nbsp;</span>Winter 2020</p>
         <p class="content"><span style="color: rgb(0,0,0);font-weight: bold;">Role -</span><strong>&nbsp;</strong>Design Lead</p>
         <p class="content"><span style="font-weight: bold;color: rgb(0,0,0);">Partners -</span><strong>&nbsp;</strong>1 Product Manager, 8 Developers - all college students!</p>
@@ -52,7 +54,7 @@
         <p class="smalltit" style="padding-right: auto;padding-left: auto;">Impact</p>
         <p class="content">3 Months after the MVP fully shipped, <span>this app</span>&nbsp;has was&nbsp;<span class="highlight">acquired</span>&nbsp;by a local start-up company at San Diego called PrecisePK. It felt surreal seeing my creation, something I made from 0 to 1, getting endorsed by investors!&nbsp;</p>
     </div>
-    <div><img class="aligned" src="assets/img/Xplore/The%20Challenge.svg" style="margin-top: 200px;">
+    <div><img class="aligned" src="assets/img/Xplore/The%20Challenge.svg" style="margin-top: 130px;">
         <p class="content">Me and my computer science major friends decided to build something to practice our skills, and this problem was what we chose to tackle. As the designer on the team, I needed to break down this problem statement into specific parts that are easier to solve collaboratively with the team.&nbsp;<br></p>
         <p class="smalltit" >Prototype Walkthrough</p>
         <iframe width="680" height="500" style="display:block;margin-left:auto;margin-right:auto;margin-top:15px;"
@@ -82,7 +84,7 @@
         <p class="smalltit" style="padding-right: auto;padding-left: auto;">Design System</p>
         <p class="content">For this app is a touring app for UC San Diego, we decided to keep our color palette <span class="highlight">consistent&nbsp;</span>with our school’s official color palette. However, we slightly modified the palette to make it more vibrant and welcoming.&nbsp;<br></p><img class="aligned" src="assets/img/Xplore/colorPallete.svg">
         <p class="content">This color palette was applied to <span class="highlight">every visual element</span>&nbsp;of the app, from the onboarding splash pages to the icons and logos.&nbsp;</p>
-        <div class="d-flex flex-row justify-content-center" style="width: 750px;margin-right: auto;margin-left: auto;margin-top: 35px;"><img src="assets/img/Xplore/Onboarding.png" width="30%" style="padding-right: 10px;"><img src="assets/img/Xplore/Onboarding%204.png" width="30%" style="padding-right: 10px;"><img src="assets/img/Xplore/Home%20Page.png" width="30%" style="padding-right: 10px;"></div><img class="aligned" src="assets/img/Xplore/Icons.png" width="30%" style="padding-right: 10px;margin-top: 20px;margin-bottom: 0px;"><img id="consequent" class="aligned" src="assets/img/Xplore/Logo.png" width="30%" style="padding-right: 10px;margin-top: 5px;padding-left: 8px;">
+        <div class="d-flex flex-row threecol justify-content-center" ><img src="assets/img/Xplore/Onboarding.png" width="30%" height="auto" style="padding-right: 10px;"><img src="assets/img/Xplore/Onboarding%204.png" width="30%" height="auto" style="padding-right: 10px;"><img src="assets/img/Xplore/Home%20Page.png" width="30%" height="auto" style="padding-right: 10px;"></div><img class="aligned" src="assets/img/Xplore/Icons.png" width="30%" style="padding-right: 10px;margin-top: 20px;margin-bottom: 0px;"><img id="consequent" class="aligned" src="assets/img/Xplore/Logo.png" width="30%" style="padding-right: 10px;margin-top: 5px;padding-left: 8px;">
         <p class="smalltit" style="padding-right: auto;padding-left: auto;">Responsiveness</p>
         <p class="content">I was working with a team of developers on this project. To make my designs responsive to different screen sizes and make life easier for my developers, I created a few guidelines for grid and important UI elements.<br></p><img class="aligned" src="assets/img/Xplore/Grids%20(3).png" style="margin-top: 20px;"><img class="aligned" src="assets/img/Xplore/TourCard.png" style="margin-bottom: 0px;"><img class="unaligned" src="assets/img/Xplore/PlaceCard.png" style="margin-top: 20px;">
     </div>
@@ -91,14 +93,14 @@
         <p class="content">To make sure the color choices in our app are accessible to all kinds of UC San Diego’s visitors, I carefully evaluated the color contrast of our UIs against the <span class="highlight">accessibility standards by WCAG</span>. Also, since a lot of the use cases are under sunlight, I tested our prototypes under stimulations of strong sunlight.<br></p><img class="aligned" src="assets/img/Xplore/usability.jpg" style="margin-bottom: 10px;margin-top: 10px;">
         <p class="content">One of the major changes made from our testing was changing the colors of the primary button. The new pairing of text and button background:<br></p>
         <p class="smalltit" style="margin-bottom:20px;">Let me take you on a tour!</p>
-        <p class="content" style="font-size:28px;font-weight:500;margin: 0px auto 0px auto;color:rgba(0,0,0,0.85);">Before you arrive</p>
+        <p class="content" id="prototit">Before you arrive</p>
         <div class="prototypecontainer">
             <img class="prototype" src="assets/img/Xplore/transportation.gif">
             <div class="prototypecaption">
                 <p class="prototypecaption">Use our guide to see different ways you can get to the campus.</p>
             </div>
         </div>
-        <p class="content" style="font-size:28px;font-weight:500;margin: 80px auto 0px auto;color:rgba(0,0,0,0.85);">Once you arrive</p>
+        <p class="content" id="prototit">Once you arrive</p>
         <div class="prototypecontainer">
             <img class="prototype" src="assets/img/Xplore/forager.gif">
             <div class="prototypecaption">
@@ -119,7 +121,7 @@
                 <p class="prototypecaption">Remember, you can also customize your own tour based on time availability and interests.</p>
             </div>
         </div>
-        <p class="content" style="font-size:28px;font-weight:500;margin: 80px auto 0px auto;color:rgba(0,0,0,0.85);">While you are on a tour</p>
+        <p class="content" id="prototit">While you are on a tour</p>
         <div class="prototypecontainer">
             <img class="prototype" src="assets/img/Xplore/audio.gif">
             <div class="prototypecaption">
@@ -145,7 +147,7 @@
                 <p class="prototypecaption">If you want to learn more about a place, feel free to read the articles under the history tab!</p>
             </div>
         </div>
-        <p class="content" style="font-size:28px;font-weight:500;margin: 80px auto 0px auto;color:rgba(0,0,0,0.85);">After the tour</p>
+        <p class="content" id="prototit">After the tour</p>
         <div class="prototypecontainer">
             <img class="prototype" src="assets/img/Xplore/after.gif">
             <div class="prototypecaption">
@@ -159,25 +161,23 @@
         <p class="content">Sometimes being a Product Designer, you have to <span class="highlight">work under multiple constraints</span>. Different stakeholders on the team might view the product from different perspectives. In order to convince the developers to implement my designs, I learned how to prioritize the values that my designs will bring to our users and to the product itself. In the cases where “usefulness” and “aesthetics” cannot be achieved at the same time, usefulness always wins.<br></p>
     </div>
     <div class="moreproj" id="next">
-        <p style="font-size: 1.7rem;font-weight:500;font-family: 'Hind Vadodara', sans-serif;margin-left: 15%;color: rgba(0,0,0,0.85);">Up Next</p>
-        <div class="d-flex flex-row moveright" style="margin-top: 50px;border-style: none;margin-bottom: 95px;padding-left:15%;">
+        <p class="smalltit moretit">Up Next</p>
+        <div class="d-flex flex-row carddiv moveright" id="morecard">
             <a href="lenovo.html"><div class="card" id="card"><img class="cardimg" id="cardimg" src="assets/img/Lenovo%20Thumbnail.jpg" width="550px" style="box-shadow: 0px 4px 10px rgba(0,0,0,0.25);">
             </div></a>
-            <div class="d-flex flex-column" style="width: 100%;">
-                <h1 class="justify-content-xl-start" style="font-size: 1.7rem;font-weight:700;font-family: 'Hind Vadodara', sans-serif;margin-left: 48px;color: rgba(0,0,0,0.85);height: auto;line-height: 0px;padding: 0px;padding-top: 25px;margin-top: 0px;">Lenovo</h1>
-                <h1 style="font-size: 21px;font-family: 'Hind Vadodara', sans-serif;font-weight: 400;margin-left: 48px;margin-top: 0px;padding: 0px;height: 1.5rem;line-height: 0px;padding-top: 25px;color: rgba(0,0,0,0.5);">UX Design Intern</h1>
-                <p style="font-size: 21px;padding-top: 20px;font-family: 'Hind Vadodara';color: rgba(0,0,0,0.75);letter-spacing: normal;width: 520px;height: 120px;line-height: 30px;margin-bottom: 0px;margin-left: 48px;">I worked with amazing Data Scientists to incorporate Computer Vision into the Lenovo's internal tools and external products.</p>
-                <a href="lenovo.html" style="width: 150px;margin-top: auto;margin-left: 48px;"><img id="cta1" class="justify-content-xl-start" style="margin-left: 0px;margin-top: auto;text-align: left;" src="assets/img/Primary%20Button.svg" height="50px" width="150px"></a>
+            <div class="d-flex flex-column projectDescription">
+                <h1 class="subtitle1" style="font-weight:700;color: rgba(0,0,0,0.85);">Lenovo</h1>
+                <h1 class="subtitle"> UX Design Intern</h1>
+                <p class="description">I worked with amazing Data Scientists to incorporate Computer Vision into the Lenovo's internal tools and external products.</p>
+                <a href="lenovo.html" class="cta"><img id="cta1" class="cta"  src="assets/img/Primary%20Button.svg" height="50px" width="150px"></a>
             </div>
         </div>
     </div>
-    <div class="footer">
-    <ul class="nav footer-tabs" id="footer" style="height: auto;margin-top: 100px;margin-bottom: 50px;margin-left:15%;border-style: none;">
+    <ul class="nav footer-tabs" id="footer" >
         <li class="footer-item" style="border-style: none;"><a class="footer-link" href="mailto:b2wang@ucsd.edu" target="_blank" style="padding-left: 0px;">Email</a></li>
         <li class="footer-item" style="padding-right: 20px;padding-left: 20px;border-style: none;"><a class="footer-link" href="https://www.linkedin.com/in/boyanggwang/" target="_blank">Linkedin</a></li>
         <li class="footer-item" style="height: auto;border-style: none;"><a class="footer-link" href="https://drive.google.com/file/d/1RHVTm2yPFI6cT3KxqApNy1AMwff930z6/view?usp=sharing" target="_blank" style="padding-right: 20px;padding-left: 20px;">Resume</a></li>
     </ul>
-    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
@@ -236,7 +236,7 @@
             barid.className = "scrollbarbox hide"               
         }
 
-        if (y >= 20700){
+        if (y >= 10100){
             moreid.className = "moreproj show movein"
             totopid.className = "baselink show movein"
         } else {
