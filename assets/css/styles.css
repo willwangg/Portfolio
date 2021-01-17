@@ -430,6 +430,62 @@ footer {
     margin-bottom:0px;
 }
 
+.about{
+    margin-top: 100px;
+    margin-left:15%;
+    margin-right:0;
+    width: 85%;
+    display:flex;
+    flex-direction:row;
+}
+
+.portrait img{
+    width: 650px;
+}
+
+.besideportrait{
+    width: 40%;
+    text-align: center;
+    height: 432px;
+    position: relative;
+}
+
+.besideportrait p{
+    margin:0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.metitle{
+    display: inline-block;
+    font-weight: 700;
+    width: auto;
+    color:white;
+    padding: 10px;
+    background-color:#EB5600;
+    font-size: 28px;
+}
+
+.highlight{
+    width: 680px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+.highlight img{
+    width: 33%;
+    height: auto;
+}
+
+.contentsect{
+    width: 680px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+}
 
 @media only screen and (max-width: 1280px) {
 
@@ -531,7 +587,51 @@ footer {
         animation-delay:-35s;
         top: 570px;
     }
+
+    .about{
+        display:initial;
+        margin-left:auto;
+        margin-right:auto;
+        width: 100%;
+    }
+
+    .portrait{
+        padding-top: 100px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .portrait img{
+        width: 100%;
+        margin-left:auto;
+        margin-right:auto;
+        align-items: center;
+        height: auto;
+    }
+
+    .besideportrait{
+        width: 90%;
+        text-align:start;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
     
+    .besideportrait p{
+        margin:0;
+        position: initial;
+        top:0;
+        left:0;
+        transform: none;
+    }
+    
+    #mecontent{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media only screen and (max-width: 1080px) {
@@ -543,6 +643,19 @@ footer {
     .nav-list{
         margin-right:5%;
         
+    }
+
+    .contentsec{
+        width: 90%;
+    }
+
+    .highlight{
+        width: 100%;
+    }
+
+    .highlight img{
+        width: 33%;
+        height: auto;
     }
 
     .carddiv{
@@ -864,4 +977,10 @@ footer {
         font-size:14px;
     }
 
+    .portrait{
+        padding-top: 40px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
