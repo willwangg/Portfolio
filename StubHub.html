@@ -85,7 +85,7 @@
             </p>
             <p class="content">The smaller blueprints were able to capture the backend technical processes in much fuller details(Yes!).  As I was analyzing these root causes, I discovered that a lot of the problems resulted from StubHub’s inconsistent communication system. 
             </p>
-            <p class="content" style="margin-top: 100px;font-size:32px;line-height: normal;color:black;"><img class="icon" src="assets/img/StubHub/Imagine.svg"><span class="highlight">    Imagine - </span>
+            <p class="content" style="margin-top: 100px;font-size:32px;line-height: normal;color:black;"><img class="icon" src="assets/img/StubHub/Imagine.svg"><span class="highlight"> Imagine - </span>
             </p>
             <p class="content" style="margin-top: 25px;font-size:32px;line-height: normal;color:black;">You could not make it to the concert and just sold your tickets on StubHub. 
             </p>
@@ -94,14 +94,34 @@
             <p class="smalltit">Critical Templates</p>
             <p class="content">After I presented my findings to the team, my next task was to improve StubHub’s current email system. To begin, I gathered 5 critical email templates based on StubHub’s data.
             </p>
+            <img class="aligned" src="assets/img/StubHub/Critical Templates.png" style="margin-bottom: 0px;">
             <p class="smalltit">Key Elements of an Email</p>
             <p class="content">By analyzing these emails, I identified some recurring elements that are present in most of the them -
             </p>
+            <img class="aligned" src="assets/img/StubHub/components.png" style="margin-bottom: 0px;">
             <p class="content">To improve upon the current system, my goal was to iterate upon these existing elements while trying to give them a more modern look & feel.
             </p>
             <p class="smalltit">Redesigned Prototypes</p>
-            <p class="content">By analyzing these emails, I identified some recurring elements that are present in most of the them -
+            <img class="aligned" src="assets/img/StubHub/Gmail Mockup.jpg" style="margin-bottom: 50px;">
+            <p class="content">The redesigned prototypes have a look & feel that better illustrates StubHub's branding as a ticketing service platform. StubHub's core purple color makes this new email system consistent with StubHub's website and mobile apps.
             </p>
+            <p class="content" style="margin-top: 25px;font-size:32px;line-height: normal;color:black;">Redesigned Elements - Event Info</p>
+            <img class="aligned" src="assets/img/StubHub/TicketTemplate.png" style="margin-bottom: 50px;">
+            <p class="content">One of the elements that is heavily redesigned in the new system is the section of event information. 
+            </p>
+            <img class="aligned" src="assets/img/StubHub/eventInfoRedesign.png" style="margin-bottom: 50px;">
+            <p class="content">The new design heavily uses imagery that creates a sense of excitement when users see StubHub's emails. Seeing the performer, even as a picture, will induce the feeling of actually seeing the performer in person. Also, the font sizes and layout were updated to adhere to StubHub's newest design guidelines.
+            </p> 
+            <img class="aligned" src="assets/img/StubHub/different placement.png" style="margin-bottom: 50px;">
+            <p class="content">Another important change is that the position of event information section in an email is moved up to the beginning part. This change in position is a possible solution to one of the core problems discovered in Service Blueprints - <span class="highlight">Forgetful Users</span>.</p> 
+            <br><p class="content"><span class="highlight">By nature, StubHub's service cycle is long.</span> As a seller, you might get your tickets sold months after you list them. As a buyer, your tickets might arrive a long time after you purchase them. Therefore, the when the users get emails like "upload your tickets on time" or "your tickets are arrived", It would take time for them to realize which concert the emails are about. </p> 
+            <br><p class="content">Moving the event information section to the beginning of the email, users will instantly realize the subject event of the emails received and remember which stage they are at with the tickets. </p> 
+            <p class="smalltit">Other Elements</p>
+            <p class="content">Several other elements in the original templates were redesigned to keep up with StubHub's newest brand voice.</p> 
+            <img class="aligned" src="assets/img/StubHub/otherchange.png" style="margin-bottom: 50px;">
+            <p class="content"><span class="highlight">This is an ongoing project.</span> Feel free to reach out to me for the lastest updates! :)</p> 
+            <p class="smalltit">Things I Learned</p>
+            <p class="content">The biggest takeaway from this project was the experience of conducting user research on a company’s technical processes. When a company becomes large, responsibilities are distributed into many smaller branches, which can loosen the connections in-between processes. The “user research” I did for this project was novel, as my users were different development teams. Aside from learning about the technical processes underlying the user experience, I gained a better understanding on how products and services at large-scale companies operate as a whole. </p> 
         </div>
     </div>
     <div class="moreproj" id="next">
@@ -154,6 +174,7 @@
 
     function progressBar() {
         var winscroll = document.documentElement.scrollTop;
+        console.log(winscroll);
         var height = document.documentElement.scrollHeight - document.documentElement.
             clientHeight;
         var scrolled = (winscroll / height) * 100;
@@ -180,7 +201,7 @@
             barid.className = "scrollbarbox hide"               
         }
 
-        if (y >= 3900){
+        if (y >= 13200){
             moreid.className = "moreproj show movein"
             totopid.className = "baselink show movein"
         } else {
